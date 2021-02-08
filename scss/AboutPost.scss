@@ -1,0 +1,92 @@
+.btnPosts1{
+    background: #F8ECE0;
+    border: 0.5px solid #424242;
+    border-bottom: 0cm;
+    box-sizing: border-box;
+    color: #424242;
+    text-align: center;
+    border-radius: 0px;
+    }
+.btnProfile1,.btneSkills1,.btnProjects1{
+    background: #FBF8EF;
+    color: #424242;
+    border: 0ch;
+    text-align: center;
+    }
+.btnProfile1{
+    float: left;
+    margin-left: 10%;
+    }
+.btnProfile1:hover,.btnPosts1:hover,.btneSkills1:hover,.btnProjects1:hover{
+    animation-duration: 1s;
+    background-color: #F8ECE0;
+    }
+.LinePost{
+    width: 150;
+    height: 1PX;
+    float: right;
+    margin-right: 78.5%;
+    margin-top: -0.5px;
+}
+.LinePost2{
+    width: 320;
+    height: 1PX;
+    float: right;
+    margin-right: 42%;
+    margin-top: -0.5;
+}
+.position1{
+    float: left;
+    margin-left: -27%;
+    width: 1000px;
+}
+.position2{
+    width: 800PX;
+}
+.EcritureTitrePost{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 42%;
+    color: #D77F4A;
+}
+.Point{
+    width: 7px;
+    height: 7px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 5PX;
+}
+.MiniTtitrePost{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 12%;
+}
+.ligneHorisentale{
+    height: 1px;
+    width: 293PX;
+    transform: rotate(-90deg);
+    margin-left: -465PX;
+    margin-top: 21%;
+}
+.EcritureTitrePosition2{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: -37%;
+    margin-top: -135px;
+    color: #D77F4A;
+}
+.EcritureTitrePosition3{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: -37%;
+    margin-bottom: -118px;
+    color: #D77F4A;
+}
+.EcriturePosition2{
+    margin-left: -41%;
+    margin-top: 1px;
+}
+.EcriturePosition3{
+    margin-left: -41%;
+    margin-top:  15%;
+}

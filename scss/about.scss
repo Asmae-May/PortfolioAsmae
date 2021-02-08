@@ -51,7 +51,7 @@ text-align: center;
 }
 .tableRight{
     width: 1000PX;
-    margin-bottom: 0px;
+    margin-bottom: -11px;
     margin-left: -45%;
 }
 .Ecriture{
@@ -61,27 +61,27 @@ text-align: center;
     font-size: 16px;
     font-weight: bold;
 }
-.photoSvg2,.EcritureTitre{
-    display: inline;
-}
-.photoSvg{
-    width: 20px;
-    height: 20px;
-    margin-left: 26px;
-    margin-top: 1PX;
-}
-.photoSvg1{
-    width: 20px;
-    height: 20px;
-    margin-top: 1PX;
-}
 .photoSvg2{
     width: 20px;
     height: 20px;
     margin-top: -4PX;
     margin-left: 40%;
 }
+.photoSvg2,.EcritureTitre{
+    display: inline;
+}
+.photoSvg{
+    width: 20px;
+    height: 20px;
+    margin-left: 0px;
+    margin-top: -9PX;
+}
+.photoSvg1{
+    width: 20px;
+    height: 20px;
+    margin-top: 1PX;
+}
 .photoSvg3{
-    width: 60px;
+    width: 70px;
     height: 14px;
 }
