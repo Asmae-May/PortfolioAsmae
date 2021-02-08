@@ -12,7 +12,6 @@
     float: right;
     margin-right: 10%;
 }
-
 .btnProfile{
 float: left;
 margin-left: 10%;
@@ -22,7 +21,7 @@ border-bottom: 0cm;
 box-sizing: border-box;
 color: #424242;
 text-align: center;
-border-radius: 3px;
+border-radius: 0px;
 }
 .btnPosts,.btneSkills,.btnProjects{
 background: #FBF8EF;
@@ -44,8 +43,8 @@ text-align: center;
     width: 450PX;
     height: 1PX;
     float: right;
-    margin-right: 43.5%;
-    margin-top: 0px;
+    margin-right: 43.4%;
+    margin-top: -1px;
    //margin-left:-143px ;
 }
 .photoProfil{
@@ -84,7 +83,7 @@ text-align: center;
 }
 .tableRight{
     width: 1000PX;
-    margin-bottom: 113px;
+    margin-bottom: 0px;
     margin-left: -45%;
 }
 .Ecriture{
@@ -96,4 +95,8 @@ text-align: center;
 }
 .photoSvg2,.EcritureTitre{
     display: inline;
+}
+.photoSvg3{
+    width: 60px;
+    height: 14px;
 }
