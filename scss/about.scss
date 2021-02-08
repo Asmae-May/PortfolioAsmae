@@ -1,44 +1,99 @@
 @import "style";
+.imgCouverture{
+    width: 100%;
+    height: 150px;
+    margin-top: -2px;
+    margin-left: -1px;
+}
+.imgPROFIL{
+    width: 200px;
+    height: 200px;
+    margin-top: -5%;
+    float: right;
+    margin-right: 10%;
+}
 
-.about-title{
-    @include styleText();
+.btnProfile{
+float: left;
+margin-left: 10%;
+background: #F8ECE0;
+border: 0.5px solid #424242;
+border-bottom: 0cm;
+box-sizing: border-box;
+color: #424242;
+text-align: center;
+border-radius: 3px;
+}
+.btnPosts,.btneSkills,.btnProjects{
+background: #FBF8EF;
+color: #424242;
+border: 0ch;
+text-align: center;
+}
+.btnProfile:hover,.btnPosts:hover,.btneSkills:hover,.btnProjects:hover{
+    animation-duration: 1s;
+    background-color: #F8ECE0;
+}
+.photoSvg{
+    width: 20px;
+    height: 20px;
+    margin-left: 26px;
+    margin-top: 1PX;
+}
+.LIGNE{
+    width: 450PX;
+    height: 1PX;
+    float: right;
+    margin-right: 43.5%;
+    margin-top: 0px;
+   //margin-left:-143px ;
+}
+.photoProfil{
+    width: 142PX;
+    height: 142PX;
+   /* float: right;
+    margin-right: 79%;*/
+    margin-left: 48%;
+    float: left;
+    margin-top: 10px;
+}
+.lien2 {  
+    color:$primary-color;
+    text-decoration: none;
+}
+.photoSvg1{
+    width: 20px;
+    height: 20px;
+    margin-top: 1PX;
+}
+.photoSvg1,lien2{
+    display: inline;
+    margin-left: 48%;
+    margin-bottom: 6px;
+}
+.photoSvg2{
+    width: 20px;
+    height: 20px;
+    margin-top: -4PX;
+    margin-left: 40%;
+}
+.TableLeft{
+    float: left;
+    width: 500PX;
+    margin-left: -23%;
+}
+.tableRight{
+    width: 1000PX;
+    margin-bottom: 113px;
+    margin-left: -45%;
+}
+.Ecriture{
+    margin-left: 43%;
+}
+.EcritureTitre{
+    font-size: 16px;
     font-weight: bold;
-    font-size: 50px;
-    padding-top: 50px;
-    width: 65%;  
-    opacity: 0;
-    @include animationText();
-    animation-name: animation-title;
-    animation-delay: 600ms;
 }
-@keyframes animation-title{
-    0%{
-        opacity: 0;
-    }
-   100%{
-        opacity: 1;
-    }
-  }
-.animation-txt{
-    opacity: 0;
-    @include animationText();
-    animation-name: animation-p;
-    animation-delay: 1200ms;
+.photoSvg2,.EcritureTitre{
+    display: inline;
 }
-@keyframes animation-p {
-    0%{
-        opacity: 0;
-    }
-   100%{
-        opacity: 1;
-    }
-}
-.txt-style2{
-    @include styleText();
-    font-size: 18px;
-    letter-spacing: .01em;
-    padding-inline-start: 0;
-    line-height: 2.38105; 
-    margin-top: -25px;
-}
-
