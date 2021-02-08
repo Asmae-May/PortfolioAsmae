@@ -1,17 +1,5 @@
 @import "style";
-.imgCouverture{
-    width: 100%;
-    height: 150px;
-    margin-top: -2px;
-    margin-left: -1px;
-}
-.imgPROFIL{
-    width: 200px;
-    height: 200px;
-    margin-top: -5%;
-    float: right;
-    margin-right: 10%;
-}
+
 .btnProfile{
 float: left;
 margin-left: 10%;
@@ -33,25 +21,16 @@ text-align: center;
     animation-duration: 1s;
     background-color: #F8ECE0;
 }
-.photoSvg{
-    width: 20px;
-    height: 20px;
-    margin-left: 26px;
-    margin-top: 1PX;
-}
 .LIGNE{
     width: 450PX;
     height: 1PX;
     float: right;
     margin-right: 43.4%;
     margin-top: -1px;
-   //margin-left:-143px ;
 }
 .photoProfil{
     width: 142PX;
     height: 142PX;
-   /* float: right;
-    margin-right: 79%;*/
     margin-left: 48%;
     float: left;
     margin-top: 10px;
@@ -60,21 +39,10 @@ text-align: center;
     color:$primary-color;
     text-decoration: none;
 }
-.photoSvg1{
-    width: 20px;
-    height: 20px;
-    margin-top: 1PX;
-}
 .photoSvg1,lien2{
     display: inline;
     margin-left: 48%;
     margin-bottom: 6px;
-}
-.photoSvg2{
-    width: 20px;
-    height: 20px;
-    margin-top: -4PX;
-    margin-left: 40%;
 }
 .TableLeft{
     float: left;
@@ -95,6 +63,23 @@ text-align: center;
 }
 .photoSvg2,.EcritureTitre{
     display: inline;
+}
+.photoSvg{
+    width: 20px;
+    height: 20px;
+    margin-left: 26px;
+    margin-top: 1PX;
+}
+.photoSvg1{
+    width: 20px;
+    height: 20px;
+    margin-top: 1PX;
+}
+.photoSvg2{
+    width: 20px;
+    height: 20px;
+    margin-top: -4PX;
+    margin-left: 40%;
 }
 .photoSvg3{
     width: 60px;
