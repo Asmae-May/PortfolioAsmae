@@ -57,10 +57,16 @@ header img,nav{
 
 .imgPricipale{
     width: 300px;
-    float: right;
-	margin-right: 10%;
+    float: left;
+	margin-left: 10%;
 	height:345px;
 	margin-top: 1%;  
+}
+.Home{
+    float: right;
+    margin-right: 11%;
+    margin-top: -1%;
+    width: 55%;
 }
 .logo {
 	width: 120px;
@@ -79,7 +85,7 @@ header img,nav{
   font-weight: 500;
   animation: blur .75s ease-out infinite;
   text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
-  margin-left: 10%;
+  margin-left: 42%;
 }
 @keyframes blur {
   from {
