@@ -1,17 +1,4 @@
 @import "style";
-.imgCouverture{
-    width: 100%;
-    height: 150px;
-    margin-top: -2px;
-    margin-left: -1px;
-}
-.imgPROFIL{
-    width: 200px;
-    height: 200px;
-    margin-top: -5%;
-    float: right;
-    margin-right: 10%;
-}
 
 .btnProfile{
 float: left;
@@ -22,7 +9,7 @@ border-bottom: 0cm;
 box-sizing: border-box;
 color: #424242;
 text-align: center;
-border-radius: 3px;
+border-radius: 0px;
 }
 .btnPosts,.btneSkills,.btnProjects{
 background: #FBF8EF;
@@ -34,25 +21,16 @@ text-align: center;
     animation-duration: 1s;
     background-color: #F8ECE0;
 }
-.photoSvg{
-    width: 20px;
-    height: 20px;
-    margin-left: 26px;
-    margin-top: 1PX;
-}
 .LIGNE{
     width: 450PX;
     height: 1PX;
     float: right;
-    margin-right: 43.5%;
-    margin-top: 0px;
-   //margin-left:-143px ;
+    margin-right: 43.4%;
+    margin-top: -1px;
 }
 .photoProfil{
     width: 142PX;
     height: 142PX;
-   /* float: right;
-    margin-right: 79%;*/
     margin-left: 48%;
     float: left;
     margin-top: 10px;
@@ -61,21 +39,10 @@ text-align: center;
     color:$primary-color;
     text-decoration: none;
 }
-.photoSvg1{
-    width: 20px;
-    height: 20px;
-    margin-top: 1PX;
-}
 .photoSvg1,lien2{
     display: inline;
     margin-left: 48%;
     margin-bottom: 6px;
-}
-.photoSvg2{
-    width: 20px;
-    height: 20px;
-    margin-top: -4PX;
-    margin-left: 40%;
 }
 .TableLeft{
     float: left;
@@ -84,7 +51,7 @@ text-align: center;
 }
 .tableRight{
     width: 1000PX;
-    margin-bottom: 113px;
+    margin-bottom: -11px;
     margin-left: -45%;
 }
 .Ecriture{
@@ -94,6 +61,27 @@ text-align: center;
     font-size: 16px;
     font-weight: bold;
 }
+.photoSvg2{
+    width: 20px;
+    height: 20px;
+    margin-top: -4PX;
+    margin-left: 40%;
+}
 .photoSvg2,.EcritureTitre{
     display: inline;
+}
+.photoSvg{
+    width: 20px;
+    height: 20px;
+    margin-left: 0px;
+    margin-top: -9PX;
+}
+.photoSvg1{
+    width: 20px;
+    height: 20px;
+    margin-top: 1PX;
+}
+.photoSvg3{
+    width: 70px;
+    height: 14px;
 }
