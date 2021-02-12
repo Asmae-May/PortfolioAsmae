@@ -9,7 +9,7 @@ $marginLeft:7%;
 @mixin styleText {
     margin-left: $marginLeft;
     color:$primary-color;
-    padding-bottom: 2%;
+    padding-bottom: 0%;
 }
 @mixin animationText {
     animation-duration: 2000ms;
@@ -118,4 +118,11 @@ p{
         font-size: 16px;
         font-weight: bold;
         letter-spacing: .02em;
+}
+.pic{
+    width: 82px;
+    height: 82px;
+    float: left;
+    margin-left: 87%;
+    margin-top: auto;
 }

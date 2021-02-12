@@ -50,7 +50,7 @@
 }
 .btnB:hover,.btnF:hover,.btnD:hover,.btnBD:hover{
     animation-duration: 1s;
-    background-color: #D77F4A;
+    background-color: #F6E3CE;
 }
 .area1{
     margin-top:4%;
@@ -109,7 +109,11 @@
     margin-top: -2PX;
     margin-left: 69px;
 }
-.BE{
+.BE2,.FE{
     display: none;
 }
+.felxPosition{
+    display: flex;
+    flex-direction: row;
 
+}
