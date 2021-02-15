@@ -112,8 +112,26 @@
 .BE2,.FE{
     display: none;
 }
+/*
 .felxPosition{
     display: flex;
     flex-direction: row;
 
+}
+
+.btnF,.FE{
+    display: flex;
+    flex-direction: column;
+}
+.btnB,.BE2{
+    display: flex;
+    flex-direction: column;
+}
+.FE,.BE2{
+    display: flex;
+    flex-direction: row;
+}*/
+.BackE,.FrontE{
+    display: flex;
+    flex-direction: row;
 }
