@@ -25,33 +25,161 @@
     width: 300;
     height: 1PX;
     float: right;
-    margin-right: 66.5%;
-    margin-top: -0.5px;
+    margin-right: 66.2%;
+    margin-top: 0.5px;
     }
 .LinePostSkills2{
     width: 150;
     height: 1PX;
     float: right;
-    margin-right: 43.4%;
-    margin-top: -0.6;
-    }
-.btnB{
-    margin-left: 10%;
-    }
-.btnB,.btnF,.btnD,.btnBD{
-    width: 246;
-    background: #F8ECE0;
-    color: #424242;
-    //border: 1ch;
-   // border: 0.5px solid #424242;
-    border: 0.5px solid #BDBDBD;
+    margin-right: 42.7%;
+    margin-top: -0.9px;
+ }
+ //////////////////////////////////:Button+Annimation/////////////////////
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  $openSans: 'Open Sans', Helvetica, Arial, sans-serif;
+  body {
+    background: #333;
+    font-family: $openSans;
+  }
+  
+  .buttons {
     text-align: center;
+    border-radius:30px;
     margin-top: 1.3%;
-}
-.btnB:hover,.btnF:hover,.btnD:hover,.btnBD:hover{
-    animation-duration: 1s;
-    background-color: #F6E3CE;
-}
+    margin-left: -3%;
+  }
+  
+  $cyan: #D3C9C1;
+  $dark: #BDBDBD;
+  $borderW: 0.5px;
+  
+.blob-btn {
+    $numOfBlobs: 4;
+    z-index: 1;
+    position: relative;
+    //margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+    cursor: pointer;
+    border-radius:30px;
+    width: 246;
+    //height: 6%;
+    
+    &:before {
+      content: "";
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 84%;
+      border: $borderW solid #BDBDBD;
+      border-radius:8px;
+    }
+    
+    &:after {
+      content: "";
+      z-index: -2;
+      position: absolute;
+      left: $borderW*1.5;
+      top: $borderW*1.5;
+      width: 100%;
+      height: 84%;
+  
+      transition: all 0.3s 0.2s;
+      border-radius:8px;
+    }
+    
+    &:hover {
+      color: $dark;
+      border-radius:30px;
+      
+      &:after {
+        transition: all 0.3s;
+        left: 0;
+        top: 0;
+        border-radius:30px;
+      }
+    }
+    
+    &__inner {
+      z-index: -1;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 84%;
+      border-radius:8px;
+      background:#F8ECE0;
+    }
+    
+    // additional container created, because in FF blobs are breaking overflow:hidden of element with svg gooey filter
+    &__blobs {
+      position: relative;
+      display: block;
+      height: 84%;
+      filter: url('#goo');
+    }
+    
+    &__blob {
+      position: absolute;
+      top: $borderW;
+      width: 100% / $numOfBlobs;
+      height: 84%;
+      background: $cyan;
+      border-radius: 100%;
+      transform: translate3d(0,150%,0) scale(1.7);
+      transition: transform 0.45s;
+      
+      @supports(filter: url('#goo')) {
+        transform: translate3d(0,150%,0) scale(1.4);
+      }
+      
+      @for $i from 1 through $numOfBlobs {
+        &:nth-child(#{$i}) {
+          left: ($i - 1) * (120% / $numOfBlobs);
+          transition-delay: ($i - 1) * 0.08s;
+        }
+      }
+      
+      .blob-btn:hover & {
+        transform: translateZ(0) scale(1.7);
+        
+        @supports(filter: url('#goo')) {
+          transform: translateZ(0) scale(1.4);
+        }
+      }
+    }
+    
+  }
+  .photoButton{
+    width: 65%;
+    height: 65%;
+    margin-top: 12%;
+  }
+  .BACKgROUND{
+    float: left;
+    height: 39px;
+    width: 20%;
+    background: #D3C9C1;
+    margin-top: -7.5px;
+    border-radius: 8px 0PX 0PX 8PX;
+  }
+  
+/////////////////////////////////////////////////////////////////////////////
 .area1{
     margin-top:4%;
     text-align: center;
@@ -68,7 +196,7 @@
     float: right;
     margin-right: 23.7%;
     margin-top: 14.5px;
-     border: 0.5px solid #BDBDBD;
+    border: 0.5px solid #BDBDBD;
 }
 .LineSkills1{
     width: 38px;
@@ -105,33 +233,22 @@
 .details{
     width: 10px;
     height: 10px;
-    margin-right: -50px;
-    margin-top: -2PX;
-    margin-left: 69px;
+    float: right;
+    margin-right: 9%;
+    margin-top: 2%;
 }
-.BE2,.FE{
+.BE2,.FrontEnd2,.Desg,.BD{
     display: none;
 }
-/*
-.felxPosition{
+///////////////////////Flex//////////////////////////////
+.FlexButton{
     display: flex;
     flex-direction: row;
-
+    justify-content: center;
+    margin-left: 7%;
 }
-
-.btnF,.FE{
+.flexGrid{
     display: flex;
     flex-direction: column;
 }
-.btnB,.BE2{
-    display: flex;
-    flex-direction: column;
-}
-.FE,.BE2{
-    display: flex;
-    flex-direction: row;
-}*/
-.BackE,.FrontE{
-    display: flex;
-    flex-direction: row;
-}
+
