@@ -1,6 +1,7 @@
 $primary-color:#424242;
 //$backgroundColor:#F8ECE0;
 $backgroundColor:#FBF8EF;
+//$backgroundColor:#FAFAFA;
 $styleColor: #D77F4A;
 $font-stack:"robotoregular";
 $marginLeft:7%;
@@ -23,69 +24,23 @@ body{
     background-color: $backgroundColor;
     font-family: $font-stack;
 }
-
-header{
-    overflow: auto;
-    background-color:#F8ECE0;
-}
-nav{
-    float: right;
-    margin-right: 10%;
-    margin-top: 2%;
-}
-nav ul li:hover{
-    background-color:#FBF8EF;
-    animation-duration: 1s;
-    padding-top: 7%;
-    padding-bottom: 6.5%;
-}
-nav ul li{
-    display: inline;
-    margin-left:20PX;
-    a {
-        padding: 10px;
-        color:$primary-color;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: bold;
-        letter-spacing: .02em;
-    }
-}
-header img,nav{
-	display: inline;
-}
-
-.imgPricipale{
-    width: 300px;
-    float: left;
-	margin-left: 10%;
-	height:345px;
-	margin-top: 1%;  
-}
-.Home{
-    float: right;
-    margin-right: 11%;
-    margin-top: -1%;
-    width: 55%;
-}
 .logo {
 	width: 120px;
 	float: left;
 	margin-left: 10%;
 	height: 60px;
-	margin-top: 8px;
-    margin-bottom: 8px;
+	margin-top: 2%;
+  margin-bottom: 8px;
 }
 .area {
-  margin-top:4%;
-  //text-align: center;
-  font-size: 30PX;
-  color: $styleColor;
-  letter-spacing: 0.5px;
-  font-weight: 500;
-  animation: blur .75s ease-out infinite;
-  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
-  margin-left: 42%;
+  font-size: 22PX;
+    color: #D77F4A;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    animation: blur .75s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+    margin-top: -10%;
+    text-align: center;
 }
 @keyframes blur {
   from {
@@ -110,7 +65,7 @@ header img,nav{
   }
 }
 p{
-    margin-left: 10%;
+    margin-left: 4%;
 }
 .Liens{
         color:$styleColor;
@@ -125,4 +80,94 @@ p{
     float: left;
     margin-left: 87%;
     margin-top: auto;
+}
+/*----------------------Annimation Home---------------------------- */
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100% 50%;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  font-weight: bold;
+}
+.carousel-control-next-icon {
+background-position-x: 0.2em;
+}
+.carousel {
+margin-bottom: 4rem;
+}
+.carousel-caption {
+z-index: 10;
+bottom: 3rem;
+}
+.carousel-item {
+height: 25rem;
+background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: -3px;
+  min-width: 102%;
+  height: 26rem;
+}
+.marketing .col-lg-4 {
+margin-bottom: 1.5rem;
+text-align: center;
+}
+.marketing h2 {
+font-weight: normal;
+}
+.marketing .col-lg-4 p {
+margin-right: .75rem;
+margin-left: .75rem;
+}
+.featurette-divider {
+margin: 5rem 0; 
+}
+.featurette-heading {
+font-weight: 300;
+line-height: 1;
+letter-spacing: -.05rem;
+}
+@media (min-width: 40em) {
+.carousel-caption p {
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+.featurette-heading {
+  font-size: 30px;
+}
+}
+@media (min-width: 62em) {
+.featurette-heading {
+  margin-top: 7rem;
+}
+}
+//////////////////////////
+.flexPosition{
+  display: flex;
+  flex-direction: row;
+}
+.Taille{
+  width: 35%;
+  float: left;
+  margin-left: 10%;
+  margin-top: 4%;
+  border-radius: 8px;
+}
+.carousel-inner {
+  border-radius: 27%;
+}
+.TXT{
+  width: 45%;
+  float: right;
+  margin-right: 10%;
+  margin-top: 10%;
+}
+.ImgHome{
+  width: 100%;
+  animation-duration: 1s;
 }
