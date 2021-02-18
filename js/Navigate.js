@@ -10,3 +10,6 @@ function NavigerSkills(){
 function NavigerWork(){
     window.location = '../aboutWork.html'; 
 }
+function NavigerPopin(){
+    window.location = '../popin.html'; 
+}

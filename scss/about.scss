@@ -39,14 +39,12 @@ text-align: center;
     color:$primary-color;
     text-decoration: none;
 }
-.photoSvg1,lien2{
+.photoSvg1,.lien2{
     display: inline;
-    margin-left: 48%;
-    margin-bottom: 6px;
 }
 .TableLeft{
     float: left;
-    width: 542PX;
+    width: 5PX;
     margin-left: -23%;
 }
 .tableRight{
@@ -54,9 +52,7 @@ text-align: center;
     margin-bottom: -11px;
     margin-left: -45%;
 }
-.Ecriture{
-    margin-left: 43%;
-}
+
 .EcritureTitre{
     font-size: 16px;
     font-weight: bold;
@@ -65,7 +61,7 @@ text-align: center;
     width: 20px;
     height: 20px;
     margin-top: -4PX;
-    margin-left: 40%;
+    //margin-left: 40%;
 }
 .photoSvg2,.EcritureTitre{
     display: inline;
@@ -80,8 +76,28 @@ text-align: center;
     width: 20px;
     height: 20px;
     margin-top: 1PX;
+    margin-left: 48%;
+    margin-bottom: 6px;
 }
 .photoSvg3{
     width: 80px;
     height: 24px;
 }
+.FlexProfile{
+    display: flex;
+    flex-direction: row;
+}
+.PositionImg,.ProfileLeft{
+    display: flex;
+    flex-direction: column;
+    width: 101%;
+    margin-left: -11%;
+    margin-top: 1%;
+}
+.ProfileRight{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+

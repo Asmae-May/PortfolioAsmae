@@ -30,12 +30,6 @@
             </div>
             <div>
                 <div class="area1" >My skills</div>      
-                <br>
-                <img src="img/Line.svg" class="LineSkills">
-                <img src="img/Line.svg" class="LineSkills1">
-                <img src="img/Line.svg" class="LineSkills2">
-                <img src="img/Line.svg" class="LineSkills3">
-                <img src="img/Line.svg" class="LineSkills4">
                
                 <div class="FlexButton">  
                         <div class="flexGrid buttons">
@@ -157,7 +151,43 @@
                         </div>
                 </div>
             </div>
-            <div class="PicContatc"></div>
+            <div>
+                <img src="img/PICCONTACT.svg" id="btnPopup" class="btnPopup pic" >
+     
+                <div id="overlay" class="overlay">
+                   <div  id="popup" class="popup chat animate__animated animate__bounceInRight">
+                     <div class="Rectongle">
+                         <span id="btnClose" class="btnClose">&times;</span>
+                        <img src="../img/photoHome3.svg" class="photo">
+                       <div class="TxtChat title">Asmae EL MAYMOUNI</div><br>
+                       <div class="TxtChat">Hi there 👋 What are you looking to build?</div>
+                     </div>
+                     <div class="formulaire">
+                         <div input-icone>
+                           <input type="text" class="input" placeholder="Enter your name" >
+                           <i class="fas fa-user positionIcon"></i>
+                         </div>
+                       
+                         <div input-icone>
+                           <input type="text" class="input" placeholder="Enter your email address" >
+                           <i class="fas fa-at positionIcon"></i>
+                         </div>
+                   
+                         <div input-icone>
+                           <textarea placeholder="Tape your message ..." class="txtArea"></textarea>
+                           <i class="fas fa-envelope positionIcon"></i>
+                         </div>
+                         <button  class="btnChat">
+                           <div class="BackgroundPopin">
+                               <img src="img/submit.svg" class="photoButton">
+                           </div>
+                            Submit
+                         </button>  
+                     </div>
+                   </div>
+                   
+                </div>
+             </div>
         </section>
         <script src="js/jquery.js"> </script> 
         <script src="js/app.js" type="text/javascript"></script>

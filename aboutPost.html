@@ -35,7 +35,7 @@
                             <img src="img/experience.svg" class="photoSvg2">
                             <div class="EcritureTitre">&nbsp;Experience <BR> <BR></div>
                             <div class="EcritureTitrePost">&nbsp;May 2020 to date : JAVA/JEE Developer(Mission) - ALTEN</div>
-                            <div class="Ecriture">
+                            <div class="EcriturePost">
                                 <br>
                                 <img src="img/point.svg" class="Point" >
                                 &nbsp;Mission: Development of an automation application for planning 
@@ -52,7 +52,7 @@
                           <div class="experiance2">
                               <br>
                             <div class="EcritureTitrePost">&nbsp;Nov 2017- Apr 2020 : FAI support engineer(Technical referent) - ALTEN</div>
-                            <div class="Ecriture">
+                            <div class="EcriturePost">
                                 <br>
                                 <img src="img/point.svg" class="Point" >
                                  &nbsp;Management and supervision of production / daily flow.
@@ -115,7 +115,43 @@
                     </td>
                 </tr>
             </table>
-            <div class="PicContatc"></div>
+            <div>
+                <img src="img/PICCONTACT.svg" id="btnPopup" class="btnPopup pic" >
+     
+                <div id="overlay" class="overlay">
+                   <div  id="popup" class="popup chat animate__animated animate__bounceInRight">
+                     <div class="Rectongle">
+                         <span id="btnClose" class="btnClose">&times;</span>
+                        <img src="../img/photoHome3.svg" class="photo">
+                       <div class="TxtChat title">Asmae EL MAYMOUNI</div><br>
+                       <div class="TxtChat">Hi there 👋 What are you looking to build?</div>
+                     </div>
+                     <div class="formulaire">
+                         <div input-icone>
+                           <input type="text" class="input" placeholder="Enter your name" >
+                           <i class="fas fa-user positionIcon"></i>
+                         </div>
+                       
+                         <div input-icone>
+                           <input type="text" class="input" placeholder="Enter your email address" >
+                           <i class="fas fa-at positionIcon"></i>
+                         </div>
+                   
+                         <div input-icone>
+                           <textarea placeholder="Tape your message ..." class="txtArea"></textarea>
+                           <i class="fas fa-envelope positionIcon"></i>
+                         </div>
+                         <button  class="btnChat">
+                           <div class="BackgroundPopin">
+                               <img src="img/submit.svg" class="photoButton">
+                           </div>
+                            Submit
+                         </button>  
+                     </div>
+                   </div>
+                   
+                </div>
+             </div>
         </section>
         <script src="js/jquery.js"> </script> 
         <script src="js/app.js" type="text/javascript"></script>

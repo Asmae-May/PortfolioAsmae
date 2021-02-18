@@ -25,12 +25,11 @@ body{
     font-family: $font-stack;
 }
 .logo {
-	width: 120px;
-	float: left;
-	margin-left: 10%;
-	height: 60px;
-	margin-top: 2%;
-  margin-bottom: 8px;
+  float: left;
+    margin-left: 10%;
+    height: 23px;
+    margin-top: 0.5;
+    margin-bottom: 2%;
 }
 .area {
   font-size: 22PX;
@@ -74,13 +73,7 @@ p{
         font-weight: bold;
         letter-spacing: .02em;
 }
-.pic{
-    width: 82px;
-    height: 82px;
-    float: left;
-    margin-left: 87%;
-    margin-top: auto;
-}
+
 /*----------------------Annimation Home---------------------------- */
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
@@ -170,4 +163,15 @@ letter-spacing: -.05rem;
 .ImgHome{
   width: 100%;
   animation-duration: 1s;
+}
+button{
+  //background-color:#F8ECE0;
+width: 148px;
+margin-top: 10px;
+  font-weight: bold;
+padding-bottom: 8px;
+ padding-top: 8px;
+font-size: 18px;
+  border-radius: 8px;
+  border: 0.5px solid #BDBDBD;
 }

@@ -1,7 +1,6 @@
 /******************** ouvrir une nouvelle page HTML apres le clic  ***************** */
 
 $('.header').load('../common/header.html');
-$('.PicContatc').load('../common/PicContatc.html');
 $('.BE2').load('BE.html');
 $('.FrontEnd2').load('FE.html');
 $('.Desg').load('Design.html');

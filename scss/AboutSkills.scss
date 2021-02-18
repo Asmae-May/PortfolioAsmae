@@ -25,14 +25,14 @@
     width: 300;
     height: 1PX;
     float: right;
-    margin-right: 66.2%;
+    margin-right: 66.5%;
     margin-top: 0.5px;
     }
 .LinePostSkills2{
     width: 150;
     height: 1PX;
     float: right;
-    margin-right: 42.7%;
+    margin-right: 43.5%;
     margin-top: -0.9px;
  }
  //////////////////////////////////:Button+Annimation/////////////////////
@@ -163,21 +163,20 @@
         }
       }
     }
-    
   }
-  .photoButton{
+.photoButton{
     width: 65%;
     height: 65%;
     margin-top: 12%;
-  }
-  .BACKgROUND{
-    float: left;
-    height: 39px;
-    width: 20%;
-    background: #D3C9C1;
-    margin-top: -7.5px;
-    border-radius: 8px 0PX 0PX 8PX;
-  }
+}
+.BACKgROUND{
+  float: left;
+  height: 39px;
+  width: 20%;
+  background: #D3C9C1;
+  margin-top: -7.5px;
+  border-radius: 8px 0PX 0PX 8PX;
+}
   
 /////////////////////////////////////////////////////////////////////////////
 .area1{
@@ -189,46 +188,6 @@
     font-weight: 500;
     animation: blur .75s ease-out infinite;
     text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff; 
-}
-.LineSkills{
-    width: 730px;
-    height: 1PX;
-    float: right;
-    margin-right: 23.7%;
-    margin-top: 14.5px;
-    border: 0.5px solid #BDBDBD;
-}
-.LineSkills1{
-    width: 38px;
-    height: 1PX;
-    transform: rotate(-90deg);
-    margin-top: 11px;
-    margin-left: 228PX;
-    border: 0.5px solid #BDBDBD;
-}
-.LineSkills2{
-    width: 38px;
-    height: 1PX;
-    transform: rotate(-90deg);
-    margin-top: 11px;
-    margin-left: 200PX;
-    border: 0.5px solid #BDBDBD;
-}
-.LineSkills3{
-    width: 38px;
-    height: 1PX;
-    transform: rotate(-90deg);
-    margin-top: 8px;
-    margin-left: 445PX;
-    border: 0.5px solid #BDBDBD;
-}
-.LineSkills4{
-    width: 38px;
-    height: 1PX;
-    transform: rotate(-90deg);
-    margin-top: -7px;
-    margin-left: 728PX;
-    border: 0.5px solid #BDBDBD;
 }
 .details{
     width: 10px;
