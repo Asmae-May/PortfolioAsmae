@@ -1,0 +1,133 @@
+.overlay {
+    position: fixed;
+    left: 0px;
+    top:0px;
+    background-color: rgba(0,0 ,0 , 0.5);
+    width: 100%;
+    height: 100%;
+    z-index:1;
+    display:none;
+}
+.popup{
+    margin-left: 65%;
+    margin-top: 12%;
+    border-radius: 5px;
+}
+.btnClose {
+    float: right;
+    font-size: 22pt;
+    font-size: bo;
+    font-weight: bold;
+    margin-right: 3%;
+    cursor: pointer;
+    color: #1a1a1a;
+}
+.pic{
+    position: absolute;
+    width: 82px;
+    height: 82PX;
+    float: left;
+    margin-left: 87%;
+   // margin-top: -6%;
+   margin-top: auto;
+}
+.Rectongle{
+    position: relative;
+    width: 361px;;
+    height: 80PX;
+    background: #F8ECE0;
+    border-radius: 12px 12PX 0 0;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.TxtChat{
+    position: absolute;
+    font-family: Salsa;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $primary-color;
+    margin-left: 33%;
+    margin-top: 1%;
+}
+.photo{
+    position: absolute;
+    width: 89px;
+    height: 89px;
+   // background: url(../img/photoHome3.svg);
+    border: 4px solid #F8ECE0;
+    box-sizing: border-box;
+    border-radius: 100PX;
+    margin-left: 4%;
+    margin-top: -6%;
+}
+.title{
+    position: absolute;
+    font-weight: bold;
+}
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    background-color: $backgroundColor;
+    width: 361PX;
+    height: 500px;
+    margin-left: 10%;
+    border: 4px solid #F8ECE0;
+    height: 296px;
+    border-radius: 0 0 8PX 8PX;
+}
+.input,.txtArea{
+    border-radius: 8px;
+    width: 332px;
+    height: 40px;
+    background-color: #F8ECE0;
+    border: 0.5px solid #BDBDBD;
+    margin-left: 3%;
+    margin-top: 3%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0;
+    padding-left: 8%;
+}
+.txtArea{
+height: 100PX;
+padding-top: 2%;
+}
+.input-icone{
+    position:relative;
+ }
+ .positionIcon{
+    position: absolute;
+    left: 68px;
+    color: #424242;
+    margin-top: 20px; 
+}
+.chat{
+    display: flex;
+    flex-direction: column;
+}
+.BackgroundPopin{
+    float: left;
+    height: 39px;
+    width: 20%;
+    background: #F8ECE0;
+    margin-top: -7.5px;
+    border-radius: 8px 0PX 0PX 8PX;
+  }
+
+.btnChat{
+    width: 100px;
+    height: 41px;
+    background: #FBF8EF;
+    margin-left: 69%;
+    margin-top: 5%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0;
+}
+.btnChat:hover{
+    background-color:#F8ECE0 ;
+    animation-duration: 1s;
+}
