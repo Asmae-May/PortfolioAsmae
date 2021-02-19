@@ -9,8 +9,11 @@
     display:none;
 }
 .popup{
-    margin-left: 65%;
+   /* margin-left: 65%;
     margin-top: 12%;
+    border-radius: 5px;*/
+    margin-left: 59%;
+    margin-top: 5%;
     border-radius: 5px;
 }
 .btnClose {
@@ -65,11 +68,13 @@
     margin-left: 4%;
     margin-top: -6%;
 }
-.title{
+.titlePopin{
     position: absolute;
     font-weight: bold;
+    font-size: 19px;
 }
 .formulaire{
+    position: relative;
     display: flex;
     flex-direction: column;
     background-color: $backgroundColor;
@@ -97,11 +102,11 @@ height: 100PX;
 padding-top: 2%;
 }
 .input-icone{
-    position:relative;
+    position:absolute;
  }
  .positionIcon{
     position: absolute;
-    left: 68px;
+    left: 5%;
     color: #424242;
     margin-top: 20px; 
 }
