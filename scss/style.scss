@@ -4,7 +4,7 @@ $backgroundColor:#FBF8EF;
 //$backgroundColor:#FAFAFA;
 $styleColor: #D77F4A;
 $font-stack:"robotoregular";
-$marginLeft:7%;
+$marginLeft:10%;
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 @mixin styleText {
@@ -23,13 +23,6 @@ body{
     overflow: auto;
     background-color: $backgroundColor;
     font-family: $font-stack;
-}
-.logo {
-  float: left;
-    margin-left: 10%;
-    height: 23px;
-    margin-top: 0.5;
-    margin-bottom: 2%;
 }
 .area {
   font-size: 22PX;

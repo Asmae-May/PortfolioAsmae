@@ -25,6 +25,208 @@
     width: 450;
     height: 1PX;
     float: right;
-    margin-right: 54.6%;
+    margin-right: 54.2%;
     margin-top: 0.9PX;
+    }
+.space{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.tableStyle{
+    margin-left: $marginLeft;
+    opacity: 0;
+    @include animationText();
+    animation-name: animation-image;
+    animation-delay: 1200ms;
+    margin-top: -25%;
+}
+@keyframes animation-image{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.styleImage{
+    position: relative;
+    width: 350px;
+    height: 150px;
+    margin-top: 15px;
+}
+.styleImage1{
+    position: absolute;
+    top: -14px;
+    right: -3px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.styleImage2{
+    position: absolute;
+    top: 25px;
+    right: -70px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.txt-style1{
+    @include styleText();
+    @include animationText();
+    animation-name: animation-workTitle;
+    animation-delay: 400ms;
+    font-weight: bold;
+    font-size: 38px;
+    padding-top: 5%;
+    width: 65%;
+    opacity: 0;  
+}
+.txt-SPM{
+    @include styleText();
+    @include animationText();
+    animation-name: animation-workTitle;
+    animation-delay: 400ms;
+    font-weight: bold;
+    margin-left: 6%
+    }
+.txt-style2{
+    @include styleText();
+    //padding-top: 2%; 
+    opacity: 0;
+    @include animationText();
+    animation-name: animation-workTitle;
+    animation-delay: 800ms;
+}
+.txt-SPM2{
+    @include styleText();
+    //padding-top: 2%; 
+    opacity: 0;
+    @include animationText();
+    animation-name: animation-workTitle;
+    animation-delay: 800ms;
+    margin-left: 2%;
+    color: #777777;
+}
+@keyframes animation-workTitle{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.animate__swing{
+animation-iteration-count: infinite;
+}
+.BackGroundLogoSPM{
+    position: relative;
+    background-color: #FBF8EF;
+    border-radius: 2PX;
+    width: 55PX;
+    height: 36PX;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.imgLogoSPM{
+    position: absolute;
+    width: 33px;
+    height: 32px;
+    margin-left: 22%;
+    margin-top: 3%;
+}
+.DateSPM{
+    position: relative;
+    background-color: #F8ECE0;
+    width: 50px;
+    height: 19PX;
+    border-radius: 7px;
+}
+.area3 {
+    position: absolute;
+margin-left: 25%;
+margin-top: 1%;
+color: #424242;
+font-size: 12px;
+font-weight: bold;
+letter-spacing: 0.5px;
+animation: blur .75s ease-out infinite;
+text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+@keyframes blur {
+from {
+    text-shadow:0px 0px 10px #fff,
+    0px 0px 10px #fff, 
+    0px 0px 25px #fff,
+    0px 0px 50px hsl(209, 67%, 62%),
+    0px 0px 150px #5da0df,
+    0px 10px 100px #5da0df,
+    }
+}
+.tailleLigne{
+    width: 100%;
+    height: 1px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btnVisitsite{
+    background-color: $backgroundColor;
+    border: 0.5px solid $primary-color;
+    color: $primary-color;
+    border-radius: 28PX;
+}
+.btnVisitsite:hover{
+    background-color:#F8ECE0 ;
+    animation-duration: 1s;
+}
+.btnLearnmore{
+    background-color:#F8ECE0;
+    border: 0ch;
+    color: $primary-color;
+    border-radius: 28PX;
+}
+.btnLearnmore:hover{
+    background-color:$primary-color ;
+    animation-duration: 1s;
+}
+.styleFlech{
+    width: 1px;
+    height: 166px;
+    transform: rotate(-180deg);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+//////////////////////////////- Flex -////////////////////////////
+.tableStyle{
+    display: flex;
+    flex-direction: row;
+    }
+    .workLeft{
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+    }
+    .FlexSPM{
+    display: flex;
+    flex-direction: row;
+    }
+    .workRight{
+    // margin-left: 17%;
+    width: 40%;
+    }
+    .FlextxtSPM{
+    display: flex;
+    flex-direction: column;
+    }
+    .FlexSPMflech{
+        display: flex;
+    flex-direction: column;
+    }
+    .FlexTXT{
+    display: flex;
+    flex-direction: column;
+    width: 37%;
     }

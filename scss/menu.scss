@@ -5,6 +5,15 @@ header{
 header img,nav{
 display: inline;
 }
+.logo {
+  float: left;
+    margin-left: 10%;
+    height: 40px;
+    width: 183PX;
+    margin-top: 0.5;
+    margin-bottom: 2%;
+    animation-iteration-count: infinite;
+}
 $icon-size    : 43px;
 $border-radius: 0.5;//15% = 0.15, 50% = 0.50 etc.
 
@@ -19,7 +28,8 @@ $orange       : #F6E3CE;
 $purple       : #F6E3CE;
 
 // Text
-$gris      : #8F8F8F;
+//$gris      : #8F8F8F;
+$gris      : #5B5B5B;
 
 .container{
   background: $background;
