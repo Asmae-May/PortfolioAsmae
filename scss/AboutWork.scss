@@ -34,14 +34,6 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
-.tableStyle{
-    margin-left: $marginLeft;
-    opacity: 0;
-    @include animationText();
-    animation-name: animation-image;
-    animation-delay: 1200ms;
-    margin-top: -25%;
-}
 @keyframes animation-image{
     0%{
         opacity: 0;
@@ -175,22 +167,14 @@ from {
 }
 .btnVisitsite{
     background-color: $backgroundColor;
-    border: 0.5px solid $primary-color;
+   // border: 0.5px solid $primary-color;
     color: $primary-color;
-    border-radius: 28PX;
+    border-radius: 12PX;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
-.btnVisitsite:hover{
+.btnVisitsite:hover,.btnPopupWork:hover{
     background-color:#F8ECE0 ;
-    animation-duration: 1s;
-}
-.btnLearnmore{
-    background-color:#F8ECE0;
-    border: 0ch;
-    color: $primary-color;
-    border-radius: 28PX;
-}
-.btnLearnmore:hover{
-    background-color:$primary-color ;
     animation-duration: 1s;
 }
 .styleFlech{
@@ -203,30 +187,32 @@ from {
 .tableStyle{
     display: flex;
     flex-direction: row;
-    }
-    .workLeft{
-    display: flex;
-    flex-direction: row;
-    width: 55%;
-    }
-    .FlexSPM{
-    display: flex;
-    flex-direction: row;
-    }
-    .workRight{
-    // margin-left: 17%;
-    width: 40%;
-    }
-    .FlextxtSPM{
-    display: flex;
-    flex-direction: column;
-    }
-    .FlexSPMflech{
-        display: flex;
-    flex-direction: column;
-    }
-    .FlexTXT{
-    display: flex;
-    flex-direction: column;
-    width: 37%;
-    }
+    margin-left: $marginLeft;
+    opacity: 0;
+    @include animationText();
+    animation-name: animation-image;
+    animation-delay: 1200ms;
+    margin-top: -27%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 2%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    width: 85%;
+}
+.workLeft{
+display: flex;
+flex-direction: row;
+width: 55%;
+}
+.FlexSPM{
+display: flex;
+flex-direction: row;
+}
+.FlexTXT{
+    width: 38%;
+}
+
+
+
+
+
