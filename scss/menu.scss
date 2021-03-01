@@ -1,18 +1,18 @@
 header{
   overflow: auto;
-  background-color:$backgroundColor;
+ // background-color:$backgroundColor;
 }
 header img,nav{
 display: inline;
 }
 .logo {
   float: left;
-    margin-left: 10%;
-    height: 40px;
-    width: 183PX;
-    margin-top: 0.5;
-    margin-bottom: 2%;
-    animation-iteration-count: infinite;
+  margin-left: 10%;
+  height: 40px;
+  width: 183PX;
+  margin-top: 0.5;
+  margin-bottom: 2%;
+  animation-iteration-count: infinite;
 }
 $icon-size    : 43px;
 $border-radius: 0.5;//15% = 0.15, 50% = 0.50 etc.
