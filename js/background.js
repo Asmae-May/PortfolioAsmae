@@ -36,7 +36,7 @@ var dotTexture = loader.load("img/dotTexture.png");
 
 
 
-var dotsAmount = 500;
+var dotsAmount = 300;
 var dotsGeometry = new THREE.Geometry();
 var positions = new Float32Array(dotsAmount * 3);
 

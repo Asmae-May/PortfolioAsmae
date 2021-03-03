@@ -1,8 +1,10 @@
-$primary-color:#424242;
+//$primary-color:#D0D0D0;
+$primary-color:#C7C7C7;
 //$backgroundColor:#F8ECE0;
 $backgroundColor:#FBF8EF;
 //$backgroundColor:#FAFAFA;
-$styleColor: #D77F4A;
+//$styleColor: #D77F4A;
+$styleColor: #ac1122;
 $font-stack:"robotoregular";
 $marginLeft:10%;
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -19,14 +21,10 @@ $marginLeft:10%;
     animation-direction: alternate;
     animation-fill-mode: forwards;  
 }
-body{
-    overflow: auto;
-   // background-color: $backgroundColor;
-    font-family: $font-stack;
-}
+
 .area {
   font-size: 22PX;
-    color: #D77F4A;
+    color:$styleColor;
     letter-spacing: 0.5px;
     font-weight: bold;
     animation: blur .75s ease-out infinite;
@@ -138,9 +136,9 @@ letter-spacing: -.05rem;
   flex-direction: row;
 }
 .Taille{
-  width: 35%;
+  width: 37%;
   float: left;
-  margin-left: 10%;
+  margin-left: 7%;
   margin-top: 4%;
   border-radius: 8px;
 }
@@ -148,10 +146,11 @@ letter-spacing: -.05rem;
   border-radius: 27%;
 }
 .TXT{
-  width: 45%;
+  width: 59%;
   float: right;
-  margin-right: 10%;
+  margin-right: 7%;
   margin-top: 10%;
+  margin-left: 9%;
 }
 .ImgHome{
   width: 100%;
@@ -167,4 +166,10 @@ padding-bottom: 8px;
 font-size: 18px;
   border-radius: 8px;
   border: 0.5px solid #BDBDBD;
+}
+.content__innerBackground{
+	grid-area: 1 / 1 / 1 / 1;
+	position: relative;
+	display: flex;
+	flex-direction: column;
 }
