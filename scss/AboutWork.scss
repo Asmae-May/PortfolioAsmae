@@ -1,32 +1,29 @@
 .btnProjects3{
-    background: #F8ECE0;
-    border: 0.5px solid #424242;
+    background: #650000;
+    border: 0.5px solid $primary-color;
     border-bottom: 0cm;
     box-sizing: border-box;
-    color: #424242;
+    color: $primary-color;
     text-align: center;
     border-radius: 0px;
     }
 .btnProfile3,.btnPosts3,.btneSkills3{
-    background: #FBF8EF;
-    color: #424242;
+    background: black;
+    color: $primary-color;
     border: 0ch;
     text-align: center;
-    }
-.btnProfile3{
-    float: left;
-    margin-left: 10%;
+    border-radius: 0px;
     }
 .btnProfile3:hover,.btnPosts3:hover,.btneSkills3:hover,.btnProjects3:hover{
     animation-duration: 1s;
-    background-color: #F8ECE0;
+    background-color: $primary-color;
     }
 .LineWork{
     width: 450;
-    height: 1PX;
+    height: 2PX;
     float: right;
-    margin-right: 54.2%;
-    margin-top: 0.9PX;
+    margin-right: 61%;
+    margin-top: -2PX;
     }
 .space{
     height: 400px;
@@ -54,7 +51,7 @@
     right: -3px;
     width: 100%;
     height: 100%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 5px #fff;
 }
 .styleImage2{
     position: absolute;
@@ -62,7 +59,8 @@
     right: -70px;
     width: 100%;
     height: 100%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 5px #fff;
 }
 img{
     width: 100%;
@@ -123,7 +121,9 @@ animation-iteration-count: infinite;
     border-radius: 2PX;
     width: 55PX;
     height: 36PX;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px #E0E0E0;
+
 }
 .imgLogoSPM{
     position: absolute;
@@ -166,22 +166,26 @@ from {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .btnVisitsite{
-    background-color: $backgroundColor;
+    background-color: black;
    // border: 0.5px solid $primary-color;
     color: $primary-color;
     border-radius: 12PX;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    //border: 0;
+    //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px #E0E0E0;
 
 }
 .btnVisitsite:hover,.btnPopupWork:hover{
-    background-color:#F8ECE0 ;
+    background-color:#3B3B3B;
     animation-duration: 1s;
 }
 .styleFlech{
     width: 1px;
     height: 166px;
     transform: rotate(-180deg);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   box-shadow: 0px 4px 4px #E0E0E0;
+
 }
 //////////////////////////////- Flex -////////////////////////////
 .tableStyle{
@@ -193,11 +197,12 @@ from {
     animation-name: animation-image;
     animation-delay: 1200ms;
     margin-top: -27%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px #E0E0E0;
     padding-left: 2%;
     padding-right: 1%;
     padding-bottom: 2%;
-    width: 85%;
+    width: 82%;
 }
 .workLeft{
 display: flex;

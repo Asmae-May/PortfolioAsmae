@@ -1,39 +1,36 @@
 .btneSkills2{
-    background: #F8ECE0;
-    border: 0.5px solid #424242;
+    background: #650000;
+    border: 0.5px solid $primary-color;
     border-bottom: 0cm;
     box-sizing: border-box;
-    color: #424242;
+    color: $primary-color;
     text-align: center;
     border-radius: 0px;
     }
 .btnProfile2,.btnPosts2,.btnProjects2{
-    background: #FBF8EF;
-    color: #424242;
+    background: black;
+    color: $primary-color;
     border: 0ch;
     text-align: center;
-    }
-.btnProfile2{
-    float: left;
-    margin-left: 10%;
+    border-radius: 0px;
     }
 .btnProfile2:hover,.btnPosts2:hover,.btneSkills2:hover,.btnProjects2:hover{
     animation-duration: 1s;
-    background-color: #F8ECE0;
+    background-color: #3B3B3B;
     }
 .LinePostSkills{
     width: 300;
-    height: 1PX;
+    height: 2PX;
     float: right;
-    margin-right: 66.5%;
-    margin-top: 0.5px;
+    margin-right: 74.4%;
+    margin-top: -2px;
     }
 .LinePostSkills2{
     width: 150;
-    height: 1PX;
+    height: 2PX;
     float: right;
-    margin-right: 43.5%;
-    margin-top: -0.9px;
+    margin-right: 49.4%;
+    margin-top: -2.2px;
  }
  //////////////////////////////////:Button+Annimation/////////////////////
 *, *:before, *:after {
@@ -54,8 +51,8 @@
     margin-left: -3%;
   }
   
-  $cyan: #D3C9C1;
-  $dark: #BDBDBD;
+  $cyan: #C7C7C7;
+  $dark: #AEAEAE;
   $borderW: 0.5px;
   
 .blob-btn {
@@ -85,7 +82,7 @@
       top: 0;
       width: 100%;
       height: 84%;
-      border: $borderW solid #BDBDBD;
+      border: $borderW solid $primary-color;
       border-radius:8px;
     }
     
@@ -123,7 +120,7 @@
       width: 100%;
       height: 84%;
       border-radius:8px;
-      background:#F8ECE0;
+      background:black;
     }
     
     // additional container created, because in FF blobs are breaking overflow:hidden of element with svg gooey filter
@@ -173,7 +170,7 @@
   float: left;
   height: 39px;
   width: 20%;
-  background: #D3C9C1;
+  background: $primary-color;
   margin-top: -7.5px;
   border-radius: 8px 0PX 0PX 8PX;
 }

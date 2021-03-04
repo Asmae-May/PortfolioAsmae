@@ -7,22 +7,24 @@
     animation-name: animation-image;
     animation-delay: 1200ms;
     margin-top: 2%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px #E0E0E0;
     padding-left: 2%;
     padding-right: 1%;
     padding-bottom: 2%;
-    width: 85%;
+    width: 82%;
 }
 /////////////////POPIN PLALOG///////////////////
 
 .btnPopupWorkPLALOG{
-    background-color:#F8ECE0;
+    background-color:#3B3B3B;
     border: 0ch;
     color: $primary-color;
     border-radius: 12PX;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
    // border: 0.5px solid $primary-color;
     margin-left: 6%;
+    box-shadow: 0px 4px 4px #E0E0E0;
 }
 .overlayWorkPLALOG {
     position: fixed;
@@ -40,9 +42,10 @@
     margin-bottom: 2%;
     width: 92%;
     height: 92%;
-    background-color: $backgroundColor;
+    background-color: black;
     padding: 1em;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    //box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px #fff;
     border-radius: 5px;
  }
  ////////////////////////// ----- Slik PLALOG -----  /////////////////////////////////

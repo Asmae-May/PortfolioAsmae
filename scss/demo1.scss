@@ -30,14 +30,10 @@ main {
 	pointer-events: none;
 }
 .content__title2{
-	font-family: 'Playfair Display', serif;
-	font-size: 20px;
-	font-weight: normal;
-	color: var(--color-title);
 	text-align: center;
 	margin: 0;
+	animation-iteration-count: infinite;
 }
-
 .content__subtitle {
 	font-size: 1.25em;
 	background: var(--color-subtitle-bg);
@@ -96,5 +92,5 @@ main {
 .photoStyle{
 	width: 30%;
 	height: 30%;
-	animation-iteration-count: infinite;
+	//animation-iteration-count: infinite;
 }

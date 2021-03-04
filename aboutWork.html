@@ -9,313 +9,359 @@
 
     </head>
     <body>
-        <div class="header"></div>
-        <section>
-            <div>
-                <button class="btnProfile3" onclick="NavigerProfile()">
-                     <img src="img/user 1.svg" class="photoSvg">Profile
-                </button>
-                <button class="btnPosts3" onclick="NavigerPost()">
-                   <img src="img/software-engineer.svg" class="photoSvg">Posts
-                </button>
-                <button class="btneSkills3" onclick="NavigerSkills()">
-                    <img src="img/competence.svg" class="photoSvg">skills
-                </button>
-                <button class="btnProjects3" onclick="NavigerWork()">
-                    <img src="img/analytics.svg" class="photoSvg">Projects
-                </button>
-                <div>
-                   <img src="img/Line.svg" class="LineWork">
-                </div>
-            </div>
-
-<div class="txt-style1">Hi there <label class="animate__animated animate__swing">👋</label> </div>
-<div class="txt-style2">you will find below the projects I worked on in my free time.</div>
-
-<div class="space"></div>
-
-<!---------------------------------------//   SPM   //-------------------------------------------------->
-    <div class="tableStyle">
-        <div class="workLeft">
-            <div class="FlexSPMflech">
-                <div width="100px" class="BackGroundLogoSPM">
-                        <img src="img/Logo SPM.svg" class="imgLogoSPM">
-                </div>
-                <div>
-                    <img src="img/ligneSeparation.svg"class="styleFlech" >
-                </div>
-            </div>
-            <div class="FlextxtSPM">
-                <div class="FlexSPM">
-                    <div class="FlexTXT">
-                        <div  class="txt-SPM">Smart Parking MAROC</div>
-                    </div> 
-                    <div class="DateSPM">
-                        <label class="area3">2021</label>
-                    </div>     
-                </div>  
-                <br>
-                <div  class="txt-SPM2">
-                    SPM is a website that allows us to locate the car park closest to <br>
-                    us with the status of available places and to reserve places with a simple click.
-                </div>
-                <br>
-                <div class="FlexBtn">
-                    <diV>
-                    <button class="btnVisitsite">Visit site</button>
-                    </diV> 
-                    <div>
-                        <button class="btnPopupWork" id="btnPopupWork">Learn more</button>
-                        <div id="overlayWork" class="overlayWork">
-                            <div  id="popupWork" class="popupWork  animate__animated animate__bounceInRight">
-                                <img src="img/CROIX.svg" id="btnCloseWork" class="btnCloseWork">
-                                <div class="txt-SPMDetail" >SMART PARKING MAROC</div>
-                                <div class="slider multiple-items"> 
-                                    <div class="SlickDetails">
-                                            <img src="img/spm/interface1.svg" class="imgSlik">
-                                    </div>
-                                    <div class="SlickDetails">
-                                        <img src="img/spm/gridGPS.svg" class="imgSlik">
-                                    </div>
-                                    <div class="SlickDetails">
-                                        <img src="img/spm/Auth.svg" class="imgSlik">
-                                    </div>
-                                    <div class="SlickDetails">
-                                        <img src="img/spm/interface4.svg" class="imgSlik">
-                                    </div>
-                                    <div class="SlickDetails">
-                                        <img src="img/spm/Avatar.png" class="imgSlik">
-                                    </div>
-                                    <div class="SlickDetails">
-                                        <img src="img/spm/interface3.svg" class="imgSlik">
-                                    </div>
-                                    <div class="SlickDetails">
-                                        <img src="img/spm/interface5.svg" class="imgSlik">
-                                    </div>
+        
+        <main class="demo-1">
+			
+            <div class="contentIndex">
+                <canvas class="scene scene--full" id="scene"></canvas>
+                <script type="x-shader/x-vertex" id="wrapVertexShader">
+                    attribute float size;
+                    attribute vec3 color;
+                    varying vec3 vColor;
+                    void main() {
+                    vColor = color;
+                    vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+                    gl_PointSize = size * ( 350.0 / - mvPosition.z );
+                    gl_Position = projectionMatrix * mvPosition;
+                    }
+                </script>
+                <script type="x-shader/x-fragment" id="wrapFragmentShader">
+                    varying vec3 vColor;
+                    uniform sampler2D texture;
+                    void main(){
+                    vec4 textureColor = texture2D( texture, gl_PointCoord );
+                    if ( textureColor.a < 0.3 ) discard;
+                    vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
+                    gl_FragColor = color;
+                    }
+                </script>
+                <div class="content__innerBackground">
+                        <!---------------------------------------- header -------------------------------------------->
+    
+                        <div class="header"></div>
+                        
+                        
+                        <div class="PositionButton">
+                            <div>
+                                <button class="btnProfile3" onclick="NavigerProfile()">
+                                    <img src="img/user 1.svg" class="photoSvg">Profile
+                                </button>
+                                <button class="btnPosts3" onclick="NavigerPost()">
+                                <img src="img/experience.svg" class="photoSvg">Expériences
+                                </button>
+                                <button class="btneSkills3" onclick="NavigerSkills()">
+                                    <img src="img/competence.svg" class="photoSvg">Compétences
+                                </button>
+                                <button class="btnProjects3" onclick="NavigerWork()">
+                                    <img src="img/analytics.svg" class="photoSvg">Projets
+                                </button>
+                            </div>
+                            <div>
+                                <img src="img/Line.svg" class="LineWork">
+                            </div>
+                        </div>
+                
+                <div class="txt-style1">Salut <label class="animate__animated animate__swing">👋</label> </div>
+                <div class="txt-style2">vous trouverez ci-dessous les projets sur lesquels j'ai travaillé pendant mon temps libre.</div>
+                
+                <div class="space"></div>
+                
+                <!---------------------------------------//   SPM   //-------------------------------------------------->
+                    <div class="tableStyle">
+                        <div class="workLeft">
+                            <div class="FlexSPMflech">
+                                <div width="100px" class="BackGroundLogoSPM">
+                                        <img src="img/spm/Logo SPM.svg" class="imgLogoSPM">
                                 </div>
-                                <div class="GridWorkDetailTitre">
-                                    <div class="ObjecSPM">
-                                       Purpose of the application
-                                    </div>
-                                    <div class="technoSPM">
-                                        The technologies used
-                                    </div>
-                                </div>
-                                <div class="GridWorkDetail">
-                                    <div class="ObjecSPM-Detail">
-                                        <br>
-                                        <div class="txt-SPM">
-                                            Choice and methods of solving the problem:
-                                        </div>
-                                        <div  class="txt-style2">
-                                            1. The application must allow the customer to consult the car park and display the status of the place.<Br>
-                                            2. The application must ensure the display and location of the car park on MAPS<Br>
-                                            3. The application must allow the customer to reserve a place.
-                                        </div>
-                                        <br>
-                                    </div>
-                                    <div class="technoSPM-Detail">
-                                        <br>
-                                        <div class="txt-SPM">
-                                            Front-End:
-                                        </div>
-                                        <div  class="txt-style2">
-                                            -&nbsp; React,HTML,CSS,CSS FLEX,SCSS,javascript,jquery,Bootstrap.
-                                        </div>
-                                        <div class="txt-SPM">
-                                            Back-END :
-                                        </div>
-                                        <div  class="txt-style2">
-                                           -  &nbsp;Spring Boot, Spring MVC ,Spring Security,Hibernate.
-                                        </div>
-                                        <div class="txt-SPM">
-                                            Design :
-                                        </div>
-                                        <div  class="txt-style2">
-                                            -  &nbsp;Figma.
-                                        </div>
-                                    </div>
+                                <div>
+                                    <img src="img/ligneSeparation.svg"class="styleFlech" >
                                 </div>
                             </div>
-                            
+                            <div class="FlextxtSPM">
+                                <div class="FlexSPM">
+                                    <div class="FlexTXT">
+                                        <div  class="txt-SPM">Smart Parking MAROC</div>
+                                    </div> 
+                                    <div class="DateSPM">
+                                        <label class="area3">2021</label>
+                                    </div>     
+                                </div>  
+                                <br>
+                                <div  class="txt-SPM2">
+                                    SPM est un site web qui nous permet de localiser le parking le plus proche de
+                                    nous avec l'état des places disponibles et qui nous permet de réserver des places .                           
+                                </div>
+                                <br>
+                                <div class="FlexBtn">
+                                    <diV>
+                                    <button class="btnVisitsite">Visitez le site</button>
+                                    </diV> 
+                                    <div>
+                                        <button class="btnPopupWork" id="btnPopupWork">Detail</button>
+                                        <div id="overlayWork" class="overlayWork">
+                                            <div  id="popupWork" class="popupWork  animate__animated animate__bounceInRight">
+                                                <img src="img/CROIX.svg" id="btnCloseWork" class="btnCloseWork">
+                                                <div class="txt-SPMDetail" >SMART PARKING MAROC</div>
+                                                <div class="slider multiple-items"> 
+                                                    <div class="SlickDetails">
+                                                            <img src="img/spm/interface1.svg" class="imgSlik">
+                                                    </div>
+                                                    <div class="SlickDetails">
+                                                        <img src="img/spm/gridGPS.svg" class="imgSlik">
+                                                    </div>
+                                                    <div class="SlickDetails">
+                                                        <img src="img/spm/Auth.svg" class="imgSlik">
+                                                    </div>
+                                                    <div class="SlickDetails">
+                                                        <img src="img/spm/interface4.svg" class="imgSlik">
+                                                    </div>
+                                                    <div class="SlickDetails">
+                                                        <img src="img/spm/Avatar.png" class="imgSlik">
+                                                    </div>
+                                                    <div class="SlickDetails">
+                                                        <img src="img/spm/interface3.svg" class="imgSlik">
+                                                    </div>
+                                                    <div class="SlickDetails">
+                                                        <img src="img/spm/interface5.svg" class="imgSlik">
+                                                    </div>
+                                                </div>
+                                                <div class="GridWorkDetailTitre">
+                                                    <div class="ObjecSPM">
+                                                    Objectif de l'application
+                                                    </div>
+                                                    <div class="technoSPM">
+                                                        Les technologies utilisées
+                                                    </div>
+                                                </div>
+                                                <div class="GridWorkDetail">
+                                                    <div class="ObjecSPM-Detail">
+                                                        <br>
+                                                        <div class="txt-SPM">
+                                                              Choix et méthodes de résolution du problème :
+                                                        </div>
+                                                        <div  class="txt-style2">
+                                                            1. L’application va permettre au client de consulter la localisation des parkings les plus proches avec l’état des place disponible.<Br>
+                                                            2. L’application va assurer l’affichage et l’emplacement du parking sur maps <Br>
+                                                            3. L’application va permettre au client de réserver.
+                                                        </div>
+                                                        <br>
+                                                    </div>
+                                                    <div class="technoSPM-Detail">
+                                                        <br>
+                                                        <div class="txt-SPM">
+                                                            Front-End:
+                                                        </div>
+                                                        <div  class="txt-style2">
+                                                            -&nbsp; React,HTML,CSS,CSS FLEX,SCSS,javascript,jquery,Bootstrap.
+                                                        </div>
+                                                        <div class="txt-SPM">
+                                                            Back-END :
+                                                        </div>
+                                                        <div  class="txt-style2">
+                                                        -  &nbsp;Spring Boot, Spring MVC ,Spring Security,Hibernate.
+                                                        </div>
+                                                        <div class="txt-SPM">
+                                                            Design :
+                                                        </div>
+                                                        <div  class="txt-style2">
+                                                            -  &nbsp;Figma.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
                         </div>
-                    </div> 
-                </div>
-            </div>
-        </div>
-        <div class="workRight">
-            <a href="#" >
-            <div class="styleImage">
-                <div class="styleImage1" ><img src="img/SPM_interface2.svg"/></div>
-                <div class="styleImage2" ><img src="img/SPM_interface1.svg"/></div>
-            </div>
-            </a>
-        </div>
-    </div>    
-<br><br>
-<!---------------------------------------//  PLA-LOG  //------------------------------------------------------->
-    <div class="tableStylePlalog">
-        <div class="workLeft">
-            <div class="FlexSPMflech">
-                <div width="100px" class="BackGroundLogoSPM">
-                        <img src="img/PLALOG/LogoPlalog.svg" class="imgLogo">
-                </div>
-                <div>
-                    <img src="img/ligneSeparation.svg"class="styleFlech" >
-                </div>
-            </div>
-            <div class="FlextxtSPM">
-                <div class="FlexSPM">
-                    <div class="FlexTXT">
-                        <div  class="txt-SPM">PLA-LOG</div>
-                    </div> 
-                    <div class="DateSPM">
-                        <label class="area3">2019</label>
-                    </div>     
-                </div>  
-                <br>
-                <div  class="txt-SPM2">
-                    PLALOG a web application that will offer a large number of features that<br>
-                     facilitate planning and production management as well as leave requests in a well-organized and automatic way.
-                </div>
-                <br>
-                <div class="FlexBtn">
-                    <diV>
-                        <button class="btnVisitsite">Visit site</button>
-                    </diV> 
-                    <div>
-                        <button class="btnPopupWorkPLALOG" id="btnPopupWorkPLALOG">Learn more</button>
-                        <div id="overlayWorkPLALOG" class="overlayWorkPLALOG">
-                            <div  id="popupWorkPLALOG" class="popupWorkPLALOG  animate__animated animate__bounceInRight">
-                                <img src="img/CROIX.svg" id="btnCloseWorkPlalog" class="btnCloseWork">
-                                <div class="txt-SPMDetail" >PLALOG</div>
-                                <div class="sliderPLALOG multiple-itemsPLALOG"> 
-                                    <div class="SlickDetailsPLALOG">
-                                         <img src="img/PLALOG/interface1.PNG" class="imgSlikPLALOG">
-                                    </div>
-                                    <div class="SlickDetailsPLALOG">
-                                        <img src="img/PLALOG/interface2.PNG" class="imgSlikPLALOG">
-                                    </div>
-                                    <div class="SlickDetailsPLALOG">
-                                        <img src="img/PLALOG/interface3.PNG" class="imgSlikPLALOG">
-                                    </div>
-                                    <div class="SlickDetailsPLALOG">
-                                        <img src="img/PLALOG/interface4.PNG" class="imgSlikPLALOG">
-                                    </div>
-                                    <div class="SlickDetailsPLALOG">
-                                        <img src="img/PLALOG/interface5.PNG" class="imgSlikPLALOG">
-                                    </div>
-                                    <div class="SlickDetailsPLALOG">
-                                        <img src="img/PLALOG/interface6.PNG" class="imgSlikPLALOG">
-                                    </div>
+                        <div class="workRight">
+                            <a href="#" >
+                            <div class="styleImage">
+                                <div class="styleImage1" ><img src="img/spm/interface2.svg"/></div>
+                                <div class="styleImage2" ><img src="img/spm/interface1.svg"/></div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>    
+                    <br><br>
+                <!---------------------------------------//  PLA-LOG  //------------------------------------------------------->
+                    <div class="tableStylePlalog">
+                        <div class="workLeft">
+                            <div class="FlexSPMflech">
+                                <div width="100px" class="BackGroundLogoSPM">
+                                        <img src="img/PLALOG/LogoPlalog.svg" class="imgLogo">
                                 </div>
-                                <div class="GridWorkDetailTitre">
-                                    <div class="ObjecSPM">
-                                        OBJECTIVE OF THE APPLICATION
-                                    </div>
-                                    <div class="technoSPM">
-                                        The technologies used
-                                    </div>
+                                <div>
+                                    <img src="img/ligneSeparation.svg"class="styleFlech" >
                                 </div>
-                                <div class="GridWorkDetail">
-                                    <div class="ObjecSPM-Detail">
-                                        <br>
-                                        <div class="txt-SPM">
-                                            We specify within the framework of this project the actors of the system, 
-                                            which are divided into 2 categories as follows:
+                            </div>
+                            <div class="FlextxtSPM">
+                                <div class="FlexSPM">
+                                    <div class="FlexTXT">
+                                        <div  class="txt-SPM">Planification-LOG</div>
+                                    </div> 
+                                    <div class="DateSPM">
+                                        <label class="area3">2019</label>
+                                    </div>     
+                                </div>  
+                                <br>
+                                <div  class="txt-SPM2">
+                                    PLALOG est une application web qui offrira un grand nombre de fonctionnalités
+                                    et qui facilite la planification  ainsi que les demandes de congé d'une manière bien organisée et automatique.                            </div>
+                                <br>
+                                <div class="FlexBtn">
+                                    <diV>
+                                        <button class="btnVisitsite">Visitez le site</button>
+                                    </diV> 
+                                    <div>
+                                        <button class="btnPopupWorkPLALOG" id="btnPopupWorkPLALOG">Detail</button>
+                                        <div id="overlayWorkPLALOG" class="overlayWorkPLALOG">
+                                            <div  id="popupWorkPLALOG" class="popupWorkPLALOG  animate__animated animate__bounceInRight">
+                                                <img src="img/CROIX.svg" id="btnCloseWorkPlalog" class="btnCloseWork">
+                                                <div class="txt-SPMDetail" >PLALOG</div>
+                                                <div class="sliderPLALOG multiple-itemsPLALOG"> 
+                                                    <div class="SlickDetailsPLALOG">
+                                                        <img src="img/PLALOG/interface1.PNG" class="imgSlikPLALOG">
+                                                    </div>
+                                                    <div class="SlickDetailsPLALOG">
+                                                        <img src="img/PLALOG/interface2.PNG" class="imgSlikPLALOG">
+                                                    </div>
+                                                    <div class="SlickDetailsPLALOG">
+                                                        <img src="img/PLALOG/interface3.PNG" class="imgSlikPLALOG">
+                                                    </div>
+                                                    <div class="SlickDetailsPLALOG">
+                                                        <img src="img/PLALOG/interface4.PNG" class="imgSlikPLALOG">
+                                                    </div>
+                                                    <div class="SlickDetailsPLALOG">
+                                                        <img src="img/PLALOG/interface5.PNG" class="imgSlikPLALOG">
+                                                    </div>
+                                                    <div class="SlickDetailsPLALOG">
+                                                        <img src="img/PLALOG/interface6.PNG" class="imgSlikPLALOG">
+                                                    </div>
+                                                </div>
+                                                <div class="GridWorkDetailTitre">
+                                                    <div class="ObjecSPM">
+                                                        Objectif de l'application
+                                                    </div>
+                                                    <div class="technoSPM">
+                                                        Les technologies utilisées
+                                                    </div>
+                                                </div>
+                                                <div class="GridWorkDetail">
+                                                    <div class="ObjecSPM-Detail">
+                                                        <br>
+                                                        <div class="txt-SPM">
+                                                            Cette application va nous permettre au client de : 
+                                                        </div>
+                                                        <br>
+                                                        <div  class="txt-style2">
+                                                            1. générer,modifier, supprimer, sauvegarder un nouveau planning. <Br>
+                                                            2. Demander des permutations de SHIFT  <Br>  
+                                                            3. Demander des congés.
+                                                        </div>
+                                                        <br>
+                                                    </div>
+                                                    <div class="technoSPM-Detail">
+                                                        <br>
+                                                        <div class="txt-SPM">
+                                                            Front-End:
+                                                        </div>
+                                                        <div  class="txt-style2">
+                                                            -&nbsp; React,HTML,CSS,CSS FLEX,SCSS,javascript,jquery,Bootstrap.
+                                                        </div>
+                                                        <div class="txt-SPM">
+                                                            Back-END :
+                                                        </div>
+                                                        <div  class="txt-style2">
+                                                        -  &nbsp;Spring Boot, Spring MVC ,Spring Security,Hibernate.
+                                                        </div>
+                                                        <div class="txt-SPM">
+                                                            Design :
+                                                        </div>
+                                                        <div  class="txt-style2">
+                                                            -  &nbsp;Figma.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                            </div>
+                                            
                                         </div>
-                                        <div  class="txt-style2">
-                                            1. Planning management (generate a new planning, modify, delete, save, etc.).<Br>
-                                            2. Request for SHIFT permutations<Br>
-                                            3. Request for leave..
-                                        </div>
-                                        <br>
-                                    </div>
-                                    <div class="technoSPM-Detail">
-                                        <br>
-                                        <div class="txt-SPM">
-                                            Front-End:
-                                        </div>
-                                        <div  class="txt-style2">
-                                            -&nbsp; React,HTML,CSS,CSS FLEX,SCSS,javascript,jquery,Bootstrap.
-                                        </div>
-                                        <div class="txt-SPM">
-                                            Back-END :
-                                        </div>
-                                        <div  class="txt-style2">
-                                           -  &nbsp;Spring Boot, Spring MVC ,Spring Security,Hibernate.
-                                        </div>
-                                        <div class="txt-SPM">
-                                            Design :
-                                        </div>
-                                        <div  class="txt-style2">
-                                            -  &nbsp;Figma.
-                                        </div>
-                                    </div>
+                                    </div> 
+                                    
                                 </div>
-                                
-                                
+                            </div>
+                
+                
+                
+                
+                
+                
+                
+                        </div>
+                        <div class="workRight">
+                            <div class="styleImage">
+                                <div class="styleImage1" ><img src="img/PLALOG/interface1.PNG"/></div>
+                                <div class="styleImage2" ><img src="img/PLALOG/interface1.PNG"/></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                <!---------------------------------------- Popin -------------------------------------------->
+        
+                    <div >
+                    <img src="img/PICCONTACT.svg" id="btnPopup" class="btnPopup pic" >
+
+                    <div id="overlay" class="overlay">
+                        <div  id="popup" class="popup chat animate__animated animate__bounceInRight">
+                        <div class="Rectongle">
+                            <span id="btnClose" class="btnClose">&times;</span>
+                            <img src="../img/photoHome3.svg" class="photo">
+                            <div class="TxtChat titlePopin">Asmae EL MAYMOUNI</div><br>
+                            <div class="TxtChat">Hi there 👋 What are you looking to build?</div>
+                        </div>
+                        <div class="formulaire">
+                            <div input-icone>
+                                <input type="text" class="input" placeholder="Enter your name" >
+                                <i class="fas fa-user positionIcon"></i>
                             </div>
                             
+                            <div input-icone>
+                                <input type="text" class="input" placeholder="Enter your email address" >
+                                <i class="fas fa-at positionIcon"></i>
+                            </div>
+                        
+                            <div input-icone>
+                                <textarea placeholder="Tape your message ..." class="txtArea"></textarea>
+                                <i class="fas fa-envelope positionIcon"></i>
+                            </div>
+                            <button  class="btnChat">
+                                <div class="BackgroundPopin">
+                                    <img src="img/submit.svg" class="photoButton">
+                                </div>
+                                Submit
+                            </button>  
                         </div>
-                    </div> 
-                    
+                        </div>
+                        
+                    </div>
+                    </div>
+                                    
+                                
                 </div>
             </div>
+    
+        </main>
 
 
+        
 
 
-
-
-
-        </div>
-        <div class="workRight">
-            <div class="styleImage">
-                <div class="styleImage1" ><img src="img/PLALOG/interface1.PNG"/></div>
-                <div class="styleImage2" ><img src="img/PLALOG/interface1.PNG"/></div>
-            </div>
-        </div>
-    </div>
-<!---------------------------------------   Popin-Contact  -------------------------------------------------->
-            <div class="Popin">
-                <img src="img/PICCONTACT.svg" id="btnPopup" class="btnPopup pic" >
-     
-                <div id="overlay" class="overlay">
-                   <div  id="popup" class="popup chat animate__animated animate__bounceInRight">
-                     <div class="Rectongle">
-                         <span id="btnClose" class="btnClose">&times;</span>
-                        <img src="../img/photoHome3.svg" class="photo">
-                       <div class="TxtChat titlePopin">Asmae EL MAYMOUNI</div><br>
-                       <div class="TxtChat">Hi there 👋 What are you looking to build?</div>
-                     </div>
-                     <div class="formulaire">
-                         <div input-icone>
-                           <input type="text" class="input" placeholder="Enter your name" >
-                           <i class="fas fa-user positionIcon"></i>
-                         </div>
-                       
-                         <div input-icone>
-                           <input type="text" class="input" placeholder="Enter your email address" >
-                           <i class="fas fa-at positionIcon"></i>
-                         </div>
-                   
-                         <div input-icone>
-                           <textarea placeholder="Tape your message ..." class="txtArea"></textarea>
-                           <i class="fas fa-envelope positionIcon"></i>
-                         </div>
-                         <button  class="btnChat">
-                           <div class="BackgroundPopin">
-                               <img src="img/submit.svg" class="photoButton">
-                           </div>
-                            Submit
-                         </button>  
-                     </div>
-                   </div>
-                   
-                </div>
-             </div>
-        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
         <script src="js/jquery.js"></script> 
         <script src="js/app.js" type="text/javascript"></script> 
     </body>
