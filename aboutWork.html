@@ -97,11 +97,12 @@
                                     <button class="btnVisitsite">Visitez le site</button>
                                     </diV> 
                                     <div>
-                                        <button class="btnPopupWork" id="btnPopupWork">Detail</button>
+                                        <button class="btnPopupWork btnSPM" id="btnPopupWork">Detail</button>
                                         <div id="overlayWork" class="overlayWork">
                                             <div  id="popupWork" class="popupWork  animate__animated animate__bounceInRight">
                                                 <img src="img/CROIX.svg" id="btnCloseWork" class="btnCloseWork">
                                                 <div class="txt-SPMDetail" >SMART PARKING MAROC</div>
+                                               <!-- *********** SLICK ********** --> 
                                                 <div class="slider multiple-items"> 
                                                     <div class="SlickDetails">
                                                             <img src="img/spm/interface1.svg" class="imgSlik">
@@ -125,6 +126,10 @@
                                                         <img src="img/spm/interface5.svg" class="imgSlik">
                                                     </div>
                                                 </div>
+
+                                                 <!-- ************************** --> 
+
+
                                                 <div class="GridWorkDetailTitre">
                                                     <div class="ObjecSPM">
                                                     Objectif de l'application
@@ -137,12 +142,12 @@
                                                     <div class="ObjecSPM-Detail">
                                                         <br>
                                                         <div class="txt-SPM">
-                                                              Choix et méthodes de résolution du problème :
+                                                            L’application va permettre au client de :
                                                         </div>
                                                         <div  class="txt-style2">
-                                                            1. L’application va permettre au client de consulter la localisation des parkings les plus proches avec l’état des place disponible.<Br>
-                                                            2. L’application va assurer l’affichage et l’emplacement du parking sur maps <Br>
-                                                            3. L’application va permettre au client de réserver.
+                                                            1. Consulter la localisation des parkings les plus proches avec l’état des place disponible.<Br>
+                                                            2. Assurer l’affichage et l’emplacement du parking sur maps <Br>
+                                                            3. Réserver avec quelque clics.
                                                         </div>
                                                         <br>
                                                     </div>
@@ -186,6 +191,7 @@
                     </div>    
                     <br><br>
                 <!---------------------------------------//  PLA-LOG  //------------------------------------------------------->
+                   
                     <div class="tableStylePlalog">
                         <div class="workLeft">
                             <div class="FlexSPMflech">
@@ -252,12 +258,12 @@
                                                     <div class="ObjecSPM-Detail">
                                                         <br>
                                                         <div class="txt-SPM">
-                                                            Cette application va nous permettre au client de : 
+                                                            Cette application va permettre au client de : 
                                                         </div>
                                                         <br>
                                                         <div  class="txt-style2">
-                                                            1. générer,modifier, supprimer, sauvegarder un nouveau planning. <Br>
-                                                            2. Demander des permutations de SHIFT  <Br>  
+                                                            1. Générer,modifier, supprimer un nouveau planning. <Br>
+                                                            2. Faire des permutations de SHIFT  <Br>  
                                                             3. Demander des congés.
                                                         </div>
                                                         <br>
@@ -308,10 +314,11 @@
                             </div>
                         </div>
                     </div>
+                     
                     <br>
                 <!---------------------------------------- Popin -------------------------------------------->
         
-                    <div >
+                    <div class="conPopin">
                     <img src="img/PICCONTACT.svg" id="btnPopup" class="btnPopup pic" >
 
                     <div id="overlay" class="overlay">
@@ -320,21 +327,21 @@
                             <span id="btnClose" class="btnClose">&times;</span>
                             <img src="../img/photoHome3.svg" class="photo">
                             <div class="TxtChat titlePopin">Asmae EL MAYMOUNI</div><br>
-                            <div class="TxtChat">Hi there 👋 What are you looking to build?</div>
+                            <div class="TxtChat">Salut 👋 Que cherchez-vous?</div>
                         </div>
                         <div class="formulaire">
                             <div input-icone>
-                                <input type="text" class="input" placeholder="Enter your name" >
+                                <input type="text" class="input" placeholder="Tapez votre nom" >
                                 <i class="fas fa-user positionIcon"></i>
                             </div>
                             
                             <div input-icone>
-                                <input type="text" class="input" placeholder="Enter your email address" >
+                                <input type="text" class="input" placeholder="Tapez votre adresse email" >
                                 <i class="fas fa-at positionIcon"></i>
                             </div>
                         
                             <div input-icone>
-                                <textarea placeholder="Tape your message ..." class="txtArea"></textarea>
+                                <textarea placeholder="Tapez votre message  ..." class="txtArea"></textarea>
                                 <i class="fas fa-envelope positionIcon"></i>
                             </div>
                             <button  class="btnChat">

@@ -12,14 +12,14 @@
  }
  .slider .slick-center .imgSlik{
    transform: scale(1.2);
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   box-shadow: 0px 4px 4px $primary-color;
  }
  .imgSlik{
      border-radius: 8px;
      transition: all linear .4s;
  } 
 //////////////////////////////////////////POPIN///////////////////////////////////
-.btnPopupWork{
+.btnSPM{
     background-color:#3B3B3B;
     border: 0ch;
     color: $primary-color;
@@ -53,7 +53,7 @@
  }
  .btnCloseWork {
     font-size: 22pt;
-    font-size: bo;
+    //font-size: bo;
     font-weight: bold;
     width: 50PX;
     height: 50PX;
@@ -61,6 +61,7 @@
     margin-top :-3%;
     color: #1a1a1a;
 }
+/////////////////////////////////////////////////////////////
 .TxtSPM{
     padding-top: 2%;
     font-size: 200;

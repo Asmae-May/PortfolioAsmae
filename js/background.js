@@ -36,7 +36,7 @@ var dotTexture = loader.load("img/dotTexture.png");
 
 
 
-var dotsAmount = 300;
+var dotsAmount = 500;
 var dotsGeometry = new THREE.Geometry();
 var positions = new Float32Array(dotsAmount * 3);
 
@@ -65,7 +65,8 @@ for (var i = 0; i < dotsAmount; i++) {
     dotsGeometry.vertices.push(vector);
     vector.toArray(positions, i * 3);
     colors[vector.color].toArray(colorsAttribute, i*3);
-    sizes[i] = 5;
+    //sizes[i] = 5;
+    sizes[i] = 1;
 }
 
 function moveDot(vector, index) {
@@ -162,7 +163,7 @@ function render(a) {
 function onDotHover(index) {
     dotsGeometry.vertices[index].tl = new TimelineMax();
     dotsGeometry.vertices[index].tl.to(dotsGeometry.vertices[index], 1, {
-        scaleX: 20,
+        scaleX: 5,
         ease: Elastic.easeOut.config(2, 0.2),
         onUpdate: function() {
             attributeSizes.array[index] = dotsGeometry.vertices[index].scaleX;
