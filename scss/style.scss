@@ -122,6 +122,7 @@ letter-spacing: -.05rem;
   width: 100%;
   animation-duration: 1s;
 }
+/*
 button{
   //background-color:#F8ECE0;
   width: 148px;
@@ -130,6 +131,19 @@ button{
   padding-bottom: 8px;
   padding-top: 8px;
   font-size: 18px;
+  border-radius: 8px;
+  border: 0.5px solid #BDBDBD;
+}*/
+button{
+  //background-color:#F8ECE0;
+  width: 13%;
+  margin-top: 2%;
+  font-weight: bold;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  //font-weight: 100;
+  font-weight: bold;
+  //font-size: 18px;
   border-radius: 8px;
   border: 0.5px solid #BDBDBD;
 }

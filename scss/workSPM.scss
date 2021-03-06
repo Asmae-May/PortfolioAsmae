@@ -3,7 +3,8 @@
     padding-left: 2px;
  }
  .slider{
-     height: 28%;
+     //height: 28%;
+     height: 16%;
      margin-top: 2%;
  }
  .slider .SlickDetails{
@@ -24,9 +25,14 @@
     border: 0ch;
     color: $primary-color;
     border-radius: 12PX;
+    margin-left: 132%;
+    width: 331%;
+    margin-top: 22%;
+    padding-top: 20%;
+    padding-bottom: 20%;
     //border: 0.5px solid $primary-color;
     //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 6%;
+    //margin-left: 6%;
     box-shadow: 0px 4px 4px #E0E0E0;
 }
 .overlayWork {
@@ -111,10 +117,16 @@
 .ObjecSPM-Detail,.technoSPM-Detail{
     margin-top: -1%;
     border-radius: 0 0 3PX 3px;
+    display: flex;
+    flex-direction: column;
 }
 ////////////////////////Flex/////////////////
 .FlexBtn{
     display: flex;
     flex-direction: row;
     margin-top: -2%;
+}
+.FlexPopin{
+    display: flex;
+    flex-direction: column;
 }
