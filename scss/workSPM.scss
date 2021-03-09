@@ -1,6 +1,6 @@
 ////////////////////////SLICK/////////////////////////
 .SlickDetails{
-    padding-left: 2px;
+    padding-left: 0.2%;
  }
  .slider{
      //height: 28%;
@@ -8,8 +8,9 @@
      margin-top: 2%;
  }
  .slider .SlickDetails{
-     margin: 20px;
-     position: relative;
+    // margin: 20px;
+    margin: 0.5%;
+    // position: relative;
  }
  .slider .slick-center .imgSlik{
    transform: scale(1.2);
@@ -30,9 +31,6 @@
     margin-top: 22%;
     padding-top: 20%;
     padding-bottom: 20%;
-    //border: 0.5px solid $primary-color;
-    //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    //margin-left: 6%;
     box-shadow: 0px 4px 4px #E0E0E0;
 }
 .overlayWork {
@@ -66,6 +64,11 @@
     margin-left: 98%;
     margin-top :-3%;
     color: #1a1a1a;
+}
+.ConPopinWork{
+    //position: fixed;
+    z-index: 5;
+    //margin-left: 10%;
 }
 /////////////////////////////////////////////////////////////
 .TxtSPM{
@@ -115,6 +118,10 @@
     box-shadow: 0px 4px 4px #484848;
 }
 .ObjecSPM-Detail,.technoSPM-Detail{
+    display: flex;
+    flex-direction: column;
+    //height: 117%;
+    //width: 50%;
     margin-top: -1%;
     border-radius: 0 0 3PX 3px;
     display: flex;
@@ -127,6 +134,10 @@
     margin-top: -2%;
 }
 .FlexPopin{
+    display: flex;
+    flex-direction: column;
+}
+.FlexPopinWork{
     display: flex;
     flex-direction: column;
 }

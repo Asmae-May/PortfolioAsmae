@@ -1,14 +1,8 @@
-header img,nav{
-display: inline;
-}
 .logo {
-  float: left;
-  //margin-left: 10%;
-  height: 40px;
-  width: 140PX;
-  margin-top: 0.5;
+  height:73%;
+  width: 96%;
+  margin-top: 14%;
   margin-bottom: 2%;
-  margin-left: 7%;
   animation-iteration-count: infinite;
 }
 $icon-size    : 43px;
@@ -30,33 +24,21 @@ $purple       :$styleColor;
 $gris      : #D0D0D0;
 
 
-.container{
+.containerMenu{
   //background: $background;
   z-index: -1;
+  display: flex;
+  flex-direction: row;
+  margin-left: 7%;
 }
-
 .content{
-  //display: table-cell;
   text-align: center;
   vertical-align: middle;
-  float: right;
-  margin-right: 7%;
-  margin-top: -2.5%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+  margin-left: 71%;
 }
-
-h1{
-  font-family: 'Lato', sans-serif;
-  font-size: 36px;
-  font-weight: 300;
-  color: $gris;
-}
-
-.icon-container{
-  margin-top: 30px;
-  width: 100%;
-  height: $icon-size;
-}
-
 .icon{
   cursor: pointer;
   position: relative;

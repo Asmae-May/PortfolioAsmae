@@ -39,7 +39,7 @@
         opacity: 1;
     }
 }
-.styleImage{
+.styleImage,.styleImagePLALOG{
     position: relative;
     //width: 350px;
     //height: 150px;
@@ -47,7 +47,7 @@
     height: 78%;
     margin-top: 15px;
 }
-.styleImage1{
+.styleImage1,.styleImage1PLALOG{
     position: absolute;
     top: -14px;
     //right: -3px;
@@ -56,7 +56,7 @@
     height: 100%;
     box-shadow: 0px 0px 5px #fff;
 }
-.styleImage2{
+.styleImage2,.styleImage2PLALOG{
     position: absolute;
     top: 25px;
     //right: -70px;
@@ -92,6 +92,7 @@ img{
 .txt-style2{
     @include styleText();
     //padding-top: 2%; 
+    font-size: 2vmin;
     opacity: 0;
     @include animationText();
     animation-name: animation-workTitle;
@@ -214,6 +215,7 @@ from {
     padding-right: 1%;
     padding-bottom: 2%;
     width: 82%;
+    //z-index: 5;
 }
 .workLeft,.workLeftPLALOG{
 display: flex;
