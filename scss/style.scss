@@ -114,6 +114,7 @@ letter-spacing: -.05rem;
 }
 .TXT{
   width: 59%;
+
   float: right;
   margin-right: 7%;
   margin-top: 5%;
@@ -177,4 +178,62 @@ to {
    color: #737373;
   text-shadow: 0 0 8px;
 }
+}
+/////////////////////////// - Responsive Design - ///////////////////////////
+@media screen and (max-width: 624px) {
+  .flexPosition {
+    flex-direction: column;
+  }
+  .TXT{
+    width: 90%;
+    margin-top: 2%;
+    margin-left: 7%;
+    flex: 1;
+  }
+  .Taille{
+    width: 86%;
+    margin-left: 7%;
+    margin-top: 2%;
+    border-radius: 8px;
+    flex: 1;
+  }
+  .carousel-item {
+    height: 21rem;
+  }  
+  .carousel-item > img {
+    height: 21rem;
+  }
+}
+@media screen and (min-width: 625px ) and (max-width: 768px ) {
+  .flexPosition {
+    flex-direction: row;
+  }
+  .TXT{
+    width: 47%;
+    margin-top: 0%;
+    margin-left: -1%;
+  }
+  .carousel-item {
+    height: 21rem;
+  }  
+  .carousel-item > img {
+    height: 21rem;
+  }
+  .carousel-inner{
+    width: 95%;
+    margin-left: -3%;
+  }
+  .Taille {
+    margin-left: 7%;
+    margin-top: 10%;
+  }
+  .carousel-indicators {
+    margin-left: -6%;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    margin-left: -83%;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    width: 15%;
+  }
 }

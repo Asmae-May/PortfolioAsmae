@@ -16,8 +16,12 @@ if(btnCloseWork){
 }
 function closeModal2() {
     overlayWork.style.display='none';
+    document.getElementById('plalogPopin').style.zIndex = "5";
 }
 
+function PopinSPM(){
+    document.getElementById('plalogPopin').style.zIndex = "0";
+}
 
 ///////////////////////////////////  ---- PLALOG ----///////////////////////////
 
@@ -37,4 +41,10 @@ if(btnCloseWorkPlalog){
 }
 function closeModalPLALOG() {
     overlayWorkPLALOG.style.display='none';
+    document.getElementById('spmPopin').style.zIndex = "5";
+}
+
+
+function PopinPLALOG(){
+    document.getElementById('spmPopin').style.zIndex = "0";
 }

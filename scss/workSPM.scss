@@ -21,18 +21,7 @@
      transition: all linear .4s;
  } 
 //////////////////////////////////////////POPIN///////////////////////////////////
-.btnSPM{
-    background-color:#3B3B3B;
-    border: 0ch;
-    color: $primary-color;
-    border-radius: 12PX;
-    margin-left: 132%;
-    width: 331%;
-    margin-top: 22%;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    box-shadow: 0px 4px 4px #E0E0E0;
-}
+
 .overlayWork {
     position: fixed;
     left: 0px;
@@ -128,11 +117,7 @@
     flex-direction: column;
 }
 ////////////////////////Flex/////////////////
-.FlexBtn{
-    display: flex;
-    flex-direction: row;
-    margin-top: -2%;
-}
+
 .FlexPopin{
     display: flex;
     flex-direction: column;
@@ -140,4 +125,99 @@
 .FlexPopinWork{
     display: flex;
     flex-direction: column;
+}
+
+///////////////////////- Responsive Design -/////////////////////
+
+@media screen  and (min-width: 625px ) and (max-width: 768px ) {
+    .FlexPopinWork {
+        margin-top: 2%;
+    }
+    .popupWork {
+        margin-top: 4%;
+    }
+}
+@media screen  and (min-width: 425px ) and (max-width: 469px ) {
+    .txt-SPMDetail {
+        font-size: 20px;
+        margin-top: -3%;
+    }
+    .ObjecSPM, .ObjecSPM-Detail{
+        font-size: 12px;
+    }
+    .technoSPM, .technoSPM-Detail {
+        font-size: 12px;
+    }
+    .FlexPopinWork {
+        margin-top: 4%;
+    }
+    .btnCloseWork {
+        width: 40PX;
+        height: 40PX;
+        margin-left: 98%;
+        margin-top: -6%;
+    }
+    .popupWork{
+        margin-top: 8%;
+        height: 88%;
+    }
+    .slider{
+        height: 13%;
+    }
+    
+}
+@media screen  and (min-width: 375px ) and (max-width: 424px ) {
+    .txt-SPMDetail {
+        font-size: 17px;
+    }
+    .slider {
+        height: 12%;
+    }
+    .ObjecSPM, .ObjecSPM-Detail {
+        font-size: 12px;
+    }
+    .technoSPM, .technoSPM-Detail {
+        font-size: 12px;
+    }
+    .FlexPopinWork {
+        margin-top: 2%;
+    }
+    .btnCloseWork {
+        width: 38PX;
+        height: 38PX;
+        margin-top: -7%;
+    }
+    .popupWork{
+        margin-top: 7%;
+        height: 86%;
+    }
+}
+@media screen  and (min-width: 320px ) and (max-width: 374px ) {
+    .txt-SPMDetail {
+        font-size: 15px;
+    }
+    .slider {
+        height: 10%;
+    }
+    .ObjecSPM, .ObjecSPM-Detail {
+        font-size: 12px;
+        width: 55%;
+        //height: 97%;
+    }
+    .technoSPM, .technoSPM-Detail {
+        font-size: 12px;
+        //height: 97%;
+    }
+    .FlexPopinWork {
+        margin-top: 2%;
+    }
+    .btnCloseWork {
+        width: 35PX;
+        height: 35PX;
+        margin-top: -10%;
+    }
+    .popupWork{
+        margin-top: 7%;
+        height: 90%;
+    }
 }

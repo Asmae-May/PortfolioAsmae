@@ -1,9 +1,11 @@
 .logo {
   height:73%;
   width: 96%;
-  margin-top: 14%;
-  margin-bottom: 2%;
+  //margin-bottom: 2%;
   animation-iteration-count: infinite;
+}
+.MenuTaille{
+  margin-top: 2%;
 }
 $icon-size    : 43px;
 $border-radius: 0.5;//15% = 0.15, 50% = 0.50 etc.
@@ -46,9 +48,10 @@ $gris      : #D0D0D0;
   width: $icon-size;
   height: $icon-size;
   margin-left: $icon-size/5;
- // margin-right: $icon-size/5;
+  margin-right: $icon-size/5;
   border-radius: $icon-size*$border-radius;
   overflow: hidden;
+  background: black;
   &::before, &::after{
     content: '';
     position: absolute;
@@ -62,8 +65,10 @@ $gris      : #D0D0D0;
   i{
     position: relative;
     color: $gris;
-    font-size: $icon-size/2;
-    margin-top: $icon-size/4;
+    //font-size: $icon-size/2;
+    font-size: 120%;
+   // margin-top: $icon-size/4;
+   margin-top: 26%;
     transition: all 0.25s ease;
   }
 }
@@ -149,5 +154,123 @@ $gris      : #D0D0D0;
 a{
 text-decoration: none;
 }   
+///////////////////////- Responsive Design -/////////////////////
+
+@media screen  and (min-width: 625px ) and (max-width: 768px ) {
+  .containerMenu{
+    z-index: -1;
+    flex-direction: row;
+    margin-left: 7%;
+    margin-right: 2%;
+    flex: 1;
+  }
+  .content{
+    margin-left: 58%;
+    margin-top: 3%;
+  }
+  .logo {
+    height:100%;
+    width: 100%;
+    animation-iteration-count: infinite;
+  }
+  .MenuTaille{
+    margin-top: 4%;
+  }
+  .content1{
+    margin-right: -10.5%;
+  }
+}
+@media screen  and (min-width: 425px ) and (max-width: 469px ) {
+  .containerMenu{
+    z-index: -1;
+    flex-direction: row;
+    margin-left: 7%;
+    margin-right: 2%;
+    flex: 1;
+  }
+  .content{
+    margin-left: 58%;
+    margin-top: 3%;
+  }
+  .MenuTaille{
+    margin-top: 4%;
+  }
+  .content1{
+    margin-right: -10.5%;
+  }
+  .icon {
+    width: 31px;
+    height: 31px;
+  }
+  .icon i {
+    font-size: 83%;
+  }
+  .logo {
+    height: 108%;
+    width: 123%;
+  }
+}
+@media screen  and (min-width: 375px ) and (max-width: 424px ) {
+  .containerMenu{
+    z-index: -1;
+    flex-direction: row;
+    margin-left: 7%;
+    margin-right: 2%;
+    flex: 1;
+  }
+  .content{
+    margin-left: 58%;
+    margin-top: 3%;
+  }
+  .MenuTaille{
+    margin-top: 5%;
+  }
+  .content1{
+    margin-right: -14.5%;
+    margin-left: 4%;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .icon i {
+    font-size: 84%;
+  }
+  .logo {
+    height: 92%;
+    width: 161%;
+  }
+}
+@media screen  and (min-width: 320px ) and (max-width: 374px ) {
+  .containerMenu{
+    z-index: -1;
+    flex-direction: row;
+    margin-left: 7%;
+    margin-right: 2%;
+    flex: 1;
+  }
+  .content{
+    margin-left: 58%;
+    margin-top: 3%;
+  }
+  .MenuTaille{
+    margin-top: 5%;
+  }
+  .content1{
+    margin-right: -15.5%;
+    margin-left: 9%;
+  }
+  .icon {
+    width: 28px;
+    height: 28px;
+  }
+  .icon i {
+    font-size: 81%;
+  }
+  .logo {
+    height: 106%;
+    width: 180%;
+  }
+}
 
 

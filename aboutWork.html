@@ -3,6 +3,7 @@
         <title>Work Asmae</title>
         <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="scss/style.css">
             <link rel="stylesheet" href="fontawesome/css/style.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -67,7 +68,7 @@
                     <div class="space"></div>
                 
                 <!---------------------------------------//   SPM   //-------------------------------------------------->
-                    <div class="tableStyle">
+                    <div class="tableStyle" id="spmPopin">
                         <div class="workLeft">
                             <div class="FlexSPMflech">
                                 <div width="100px" class="BackGroundLogoSPM">
@@ -98,7 +99,7 @@
                                     <button class="btnVisitsite">Visitez le site</button>
                                     </diV> 
                                     <div class="ConPopinWork">
-                                        <button class="btnPopupWork btnSPM" id="btnPopupWork">Detail</button>
+                                        <button class="btnPopupWork btnSPM" id="btnPopupWork" onclick="PopinSPM()">Detail</button>
                                         <div id="overlayWork" class="overlayWork">
                                             <div  id="popupWork" class="popupWork  animate__animated animate__bounceInRight">
                                                 <img src="img/CROIX.svg" id="btnCloseWork" class="btnCloseWork">
@@ -167,7 +168,10 @@
                                                                     Front-End:
                                                                 </div>
                                                                 <div  class="txt-style2">
-                                                                    -&nbsp; React,HTML,CSS,CSS FLEX,SCSS,javascript,jquery,Bootstrap.
+                                                                    -&nbsp; React,HTML,CSS,CSS FLEX,SCSS
+                                                                </div>
+                                                                <div  class="txt-style2">
+                                                                   - javascript,jquery,Bootstrap.
                                                                 </div>
                                                                 <div class="txt-SPM">
                                                                     Back-END :
@@ -208,7 +212,7 @@
                     <br><br>
                 <!---------------------------------------//  PLA-LOG  //------------------------------------------------------->
                    
-                    <div class="tableStylePlalog">
+                    <div class="tableStylePlalog" id="plalogPopin">
                         <div class="workLeftPLALOG">
                             <div class="FlexSPMflech">
                                 <div width="100px" class="BackGroundLogoSPM">
@@ -238,7 +242,7 @@
                                     </diV> 
                                     <div class="ConPopinWork">
                                         
-                                            <button class="btnPopupWorkPLALOG" id="btnPopupWorkPLALOG">Detail</button>
+                                            <button class="btnPopupWorkPLALOG" id="btnPopupWorkPLALOG" onclick="PopinPLALOG()">Detail</button>
                                             <div id="overlayWorkPLALOG" class="overlayWorkPLALOG">
                                                 <div  id="popupWorkPLALOG" class="popupWorkPLALOG  animate__animated animate__bounceInRight">
                                                     <img src="img/CROIX.svg" id="btnCloseWorkPlalog" class="btnCloseWork">
@@ -300,7 +304,11 @@
                                                                         Front-End:
                                                                     </div>
                                                                     <div  class="txt-style2">
-                                                                        -&nbsp; React,HTML,CSS,CSS FLEX,SCSS,javascript,jquery,Bootstrap.
+                                                                        -&nbsp; React,HTML,CSS,CSS FLEX,SCSS
+                                                                    </div>
+                                                                    <div  class="txt-style2">
+                                                                        - javascript,jquery,Bootstrap.
+
                                                                     </div>
                                                                     <div class="txt-SPM">
                                                                         Back-END :
@@ -403,3 +411,4 @@
         <script src="js/jquery.js"></script> 
         <script src="js/app.js" type="text/javascript"></script> 
     </body>
+</html>

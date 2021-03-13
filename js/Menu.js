@@ -26,3 +26,14 @@ function setPage()
         if (document.getElementById("nav")!=null)
                 setActiveMenu(document.getElementById("nav").getElementsByTagName("a"), extractPageName(hrefString));
 }
+
+//////////////////// Changement couleur lors d'un clic ////////////////
+
+var icon1= document.querySelector('#icon1');
+    if(icon1){
+        icon1.addEventListener('click',() => icon1.style.backgroundColor='#650000');
+}
+var icon2= document.querySelector('#icon2');
+    if(icon2){
+        icon2.addEventListener('click',() => icon2.style.backgroundColor='#650000');
+}

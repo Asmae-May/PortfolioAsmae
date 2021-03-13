@@ -57,15 +57,12 @@
   $dark: #AEAEAE;
   $borderW: 0.5px;
   
-.blob-btn {
+.blob-btn,.blob-btn2 {
     $numOfBlobs: 4;
     z-index: 1;
     position: relative;
-    //margin-bottom: 30px;
     text-align: center;
-   // text-transform: uppercase;
     color: $primary-color;
-    //font-size: 16px;
     font-size: 3vmin;
     font-weight: bold;
     background-color: transparent;
@@ -100,7 +97,6 @@
       top: $borderW*1.5;
       width: 100%;
       height: 84%;
-  
       transition: all 0.3s 0.2s;
       border-radius:8px;
     }
@@ -210,9 +206,128 @@
     margin-left: 7%;
      // margin-left: 10%;
 }
+
 .flexGrid{
     display: flex;
     flex-direction: column;
     width: 27%;
     //width: 81%;
+}
+
+///////////////////////- Responsive Design -/////////////////////
+
+@media screen  and (min-width: 625px ) and (max-width: 768px ) {
+  .btnProfile2,.btnPosts2,.btnProjects2,.btneSkills2{
+        width: 23%;
+        font-size: 2vmin;
+        padding: 2%;
+  }
+  .LinePostSkills {
+    width: 46%;
+  }
+  .LinePostSkills2 {
+    width: 21%;
+    margin-left: -51.4%;
+  }
+  .FlexButton {
+    margin-left: 6%;
+  }
+  .blob-btn,.blob-btn2 {
+    font-size: 2vmin;
+    padding-top: 3.3%;
+    width: 82%;
+  }
+  .details {
+    width: 7px;
+    height: 7px;
+    margin-right: 6%;
+    margin-top: 4%;
+  }
+  .area1 {
+    font-size: 29px;
+  }
+}
+
+@media screen  and (min-width: 425px ) and (max-width: 469px ) {
+  .btnProfile2,.btnPosts2,.btnProjects2,.btneSkills2{
+    width: 23%;
+    font-size: 2vmin;
+    padding: 2%;
+  }
+  .LinePostSkills {
+    width: 46%;
+  }
+  .LinePostSkills2 {
+    width: 21%;
+    margin-left: -51.4%;
+  }
+  .FlexButton {
+    margin-left: 7%;
+  }
+  .blob-btn,.blob-btn2 {
+    font-size: 7px;
+    padding-top: 3.3%;
+    width: 82%;
+    height: 31px;
+  }
+  .flexGrid{
+    width: 29%;
+  }
+  .details {
+    width: 6px;
+    height: 6px;
+    margin-top: 2%;
+    margin-right: 5%;
+  }
+  .BACKgROUND {
+    height: 25px;
+    margin-top: -5%;
+  }
+  .area1 {
+    font-size: 16px;
+  }
+}
+@media screen  and (max-width: 424px ) {
+  .btnProfile2,.btnPosts2,.btnProjects2,.btneSkills2{
+    width: 23%;
+    font-size: 2vmin;
+    padding: 2%;
+  }
+  .LinePostSkills {
+    width: 46%;
+  }
+  .LinePostSkills2 {
+    width: 21%;
+    margin-left: -51.4%;
+  }
+  .FlexButton{
+    flex-wrap: wrap;
+    margin-left: 11%;
+  }
+  .flexGrid {
+    width: 46%;
+
+  }
+  .blob-btn,.blob-btn2 {
+    font-size: 8px;
+    height: 30px;
+  }
+  .blob-btn2{
+    margin-top: -112%;
+  }
+  .BACKgROUND {
+    height: 24px;
+    margin-top: -4.5px;
+  }
+  .details {
+    width: 7px;
+    height: 7px;
+    margin-right: 5%;
+  }
+  .area1 {
+    font-size: 14px;
+  }
+  .photoSvg {
+    margin-top: -4PX;
+  }
 }
