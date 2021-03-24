@@ -20,7 +20,7 @@
     font-weight: bold;
     margin-right: 3%;
     cursor: pointer;
-    color: #1a1a1a;
+    color: #C7C7C7;
 }
 .pic{
     position: absolute;
@@ -34,17 +34,20 @@
     position: fixed;
     float: left;
     margin-left: 91%;
-    margin-top: 40%;
+    margin-top: 38%;
+    z-index: 5;
 }
 .Rectongle{
     position: relative;
     width: 361px;;
     height: 80PX;
     //background: #F8ECE0;
-    background: #C7C7C7;
+    background: black;
     border-radius: 12px 12PX 0 0;
     margin-left: 10%;
     margin-top: 10%;
+    box-shadow: 0px 0px 5px #fff;
+
 }
 .TxtChat{
     position: absolute;
@@ -59,14 +62,14 @@
     color: $primary-color;
     margin-left: 33%;
     margin-top: 1%;
-    color: black;
+    color:#C7C7C7;
 }
 .photo{
     position: absolute;
     width: 89px;
     height: 89px;
-   // background: url(../img/photoHome3.svg);
-    border: 4px solid #C7C7C7;
+    box-shadow: 0px 0px 12px #fff;
+   // border: 4px solid #C7C7C7;
     box-sizing: border-box;
     border-radius: 100PX;
     margin-left: 4%;
@@ -76,19 +79,20 @@
     position: absolute;
     font-weight: bold;
     font-size: 19px;
-    color: black;
+    color: #C7C7C7;
 }
 .formulaire{
     position: relative;
     display: flex;
     flex-direction: column;
     //background-color: $backgroundColor;
-    background: #C7C7C7;
+    background: black;
     width: 361PX;
     height: 500px;
     margin-left: 10%;
+    box-shadow: 0px 0px 12px #fff;
     //border: 4px solid #F8ECE0;
-    border: 4px solid white;
+    //border: 4px solid white;
     height: 296px;
     border-radius: 0 0 8PX 8PX;
 }
@@ -97,7 +101,7 @@
     width: 332px;
     height: 40px;
    // background-color: #F8ECE0;
-   background: white;
+   background:#C7C7C7;
     border: 0.5px solid #BDBDBD;
     margin-left: 3%;
     margin-top: 3%;
@@ -127,15 +131,17 @@ padding-top: 2%;
     height: 39px;
     width: 20%;
     background: #C7C7C7;
-    margin-top: -7.5px;
+    //margin-top: -7.5px;
+    margin-top: -2.5px;
     border-radius: 8px 0PX 0PX 8PX;
   }
 
 .btnChat{
     width: 100px;
     height: 41px;
-    background: white;
-    margin-left: 69%;
+//background: white;
+    background: #C7C7C7;
+    margin-left: 67%;
     margin-top: 5%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 0;
@@ -143,4 +149,114 @@ padding-top: 2%;
 .btnChat:hover{
     background-color:#F8ECE0 ;
     animation-duration: 1s;
+}
+
+///////////////////////- Responsive Design -/////////////////////
+
+@media screen  and (min-width: 625px ) and (max-width: 768px ) {
+    .conPopin {
+        margin-left: 88%;
+        margin-top: 72%;
+    }
+    .popup {
+        margin-left: 44%;
+        margin-top: 16%;
+    }
+}
+@media screen  and (min-width: 425px ) and (max-width: 469px ) {
+    .pic {
+        width: 64px;
+        height: 64PX;
+    }
+    .conPopin {
+        margin-left: 86%;
+        margin-top: 98%;
+    }
+    .popup {
+        margin-left: -3%;
+        margin-top: -1%;
+    }
+}
+@media screen  and (min-width: 375px ) and (max-width: 424px ) {
+    .pic {
+        width: 64px;
+        height: 64PX;
+    }
+    .conPopin {
+        margin-left: 83%;
+        margin-top: 108%;
+    }
+    .Rectongle {
+        width: 85.8%;
+        height: 67PX;
+    }
+    .formulaire {
+        width: 345PX;
+        height: 282px;
+    }
+    .input, .txtArea {
+        width: 316px;
+    }
+    .btnChat {
+        width: 94px;
+        height: 36px;
+    }
+    .BackgroundPopin {
+        height: 36px;
+        margin-top: -3.5px;
+    }
+    .popup {
+        margin-left: -7%;
+        margin-top: 3%;
+    }
+    .photo {
+        width: 80px;
+        height: 80px
+    }
+}
+@media screen  and (min-width: 320px ) and (max-width: 374px ) {
+    .conPopin{
+        margin-left: 80%;
+        margin-top: 122%;
+    }
+    .pic {
+        width: 64px;
+        height: 64PX;
+    }
+    .Rectongle {
+        width: 284px;
+    }
+    .titlePopin {
+        font-size: 13px;
+        margin-left: 36%;
+    }
+    .TxtChat {
+        margin-left: 36%;
+    }
+    .photo {
+        width: 77px;
+        height: 77px;
+    }
+    .formulaire {
+        width: 284PX;
+    }
+    .input, .txtArea {
+        width: 257px;
+    }
+    .btnChat {
+        width: 75px;
+        height: 27px;
+        font-size: 12px;
+    }
+    .BackgroundPopin {
+        height: 28px;
+        margin-top: -3.5px;
+    }
+    .formulaire {
+        height: 265px;
+    }
+    .popup {
+        margin-left: -4%;
+        margin-top: 6%;
+    }
 }

@@ -23,15 +23,17 @@ border-radius: 0px;
     background-color: #3B3B3B;
 }
 .LIGNE{
-    width: 450PX;
+    //width: 450PX;
+    width: 39%;
     height: 2PX;
-    float: right;
-    margin-right: 48.9%;
+    //float: right;
+    //margin-right: 48.9%;
+    margin-left: 14%;
     margin-top: -2px;
 }
 .photoProfil{
-    width: 142PX;
-    height: 142PX;
+    width: 114PX;
+    height: 111PX;
     margin-left: 48%;
     float: left;
     margin-top: 10px;
@@ -40,23 +42,18 @@ border-radius: 0px;
     color:$primary-color;
     text-decoration: none;
 }
-.photoSvg1,.lien2{
-    display: inline;
+.positionLiens{
+    display: flex;
+    flex-direction: row;
 }
-.TableLeft{
-    float: left;
-    width: 5PX;
-    margin-left: -23%;
-}
-.tableRight{
-    width: 1000PX;
-    margin-bottom: -11px;
-    margin-left: -45%;
-}
-
 .EcritureTitre{
+    display: flex;
+    flex-direction: row;
     font-size: 16px;
     font-weight: bold;
+}
+.Ecriture{
+    width: 162%;
 }
 .photoSvg2{
     width: 20px;
@@ -64,14 +61,13 @@ border-radius: 0px;
     margin-top: -4PX;
     //margin-left: 40%;
 }
-.photoSvg2,.EcritureTitre{
-    display: inline;
-}
 .photoSvg{
-    width: 20px;
-    height: 20px;
+    //width: 20px;
+    //height: 20px;
     margin-left: 0px;
     margin-top: -9PX;
+    width: 16%;
+    height: 82%;
 }
 .photoSvg1{
     width: 20px;
@@ -91,14 +87,17 @@ border-radius: 0px;
 .PositionImg,.ProfileLeft{
     display: flex;
     flex-direction: column;
-    width: 101%;
-    margin-left: -11%;
+    //width: 101%;
+    width: 74%;
+    //margin-left: -9%;
+    margin-left: -4%;
     margin-top: 1%;
 }
 .ProfileRight{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 1%;
+    margin-top: 3%;
 }
 .content__innerBackgroundAbout{
     grid-area: 1 / 1 / 1 / 1;
@@ -112,10 +111,138 @@ border-radius: 0px;
     display: flex;
 	flex-direction: column;
     margin-left: 7%;
+    margin-top: 2%;
 }
 /*
 .BtnMenuLine,.BtnMenu1{
     position: absolute;
 }*/
+.BtnMenuLine{
+    display: flex;
+    flex-direction: row;
+}
+.BtnMenu1{
+    display: flex;
+    flex-direction: row;
+}
+///////////////////////- Responsive Design -/////////////////////
+
+@media screen and (max-width: 425px) {
+    .FlexProfile{
+        display: flex;
+        flex-direction: row;
+    }
+    .ProfileLeft{
+        width: 34%;
+        margin-left: 6%;
+        font-size: 3vmin;
+    }
+    .ProfileRight{
+        width: 95%;
+        margin-top: 4%;
+        margin-left: 16%;
+        font-size: 3vmin;
+    }
+    .btnProfile,.btnPosts,.btneSkills,.btnProjects{
+        width: 23%;
+        font-size: 2vmin;
+        padding: 2%;
+     }
+     .LIGNE{
+        width: 70%;
+        margin-left: 23.9%;
+    }
+    .photoProfil{
+        width: 70PX;
+        height: 70PX;
+        margin-left: 48%;
+        
+        margin-top: 12px;
+    }
+    .photoSvg1 {
+        width: 9px;
+        height: 12px;
+        margin-top: -1PX;
+    }
+    .photoSvg2 {
+        width: 12px;
+        height: 17px;
+        margin-top: -3PX;
+    }
+    .EcritureTitre {
+        font-size: 10px;
+    }
+    .photoSvg3 {
+        width: 42px;
+        height: 16px;
+    }
+    .Ecriture,.positionLiens{
+        font-size: 2vmin;width: 150%;
+    }
+    .positionLiens{
+        margin-left: -26%;
+        margin-top: 6%;
+    }
+    
+  }
+  @media screen and (min-width: 425px ) and (max-width: 768px ) {
+    .FlexProfile{
+        display: flex;
+        flex-direction: row;
+    }
+    .ProfileLeft{
+        width: 34%;
+        margin-left: 6%;
+        font-size: 3vmin;
+    }
+    .ProfileRight{
+        width: 95%;
+        margin-top: 4%;
+        margin-left: 16%;
+        font-size: 3vmin;
+    }
+    .btnProfile,.btnPosts,.btneSkills,.btnProjects{
+        width: 23%;
+        font-size: 2vmin;
+        padding: 2%;
+     }
+     .LIGNE{
+        width: 70%;
+        margin-left: 23.9%;
+    }
+    .photoProfil{
+        width: 70PX;
+        height: 70PX;
+        margin-left: 48%;
+        
+        margin-top: 12px;
+    }
+    .photoSvg1 {
+        width: 9px;
+        height: 12px;
+        margin-top: -1PX;
+    }
+    .photoSvg2 {
+        width: 12px;
+        height: 17px;
+        margin-top: -3PX;
+    }
+    .EcritureTitre {
+        font-size: 10px;
+    }
+    .photoSvg3 {
+        width: 42px;
+        height: 16px;
+    }
+    .Ecriture,.positionLiens{
+        font-size: 2vmin;
+        width: 150%;
+    }
+    .positionLiens{
+        margin-left: -26%;
+        margin-top: 6%;
+    }
+  }
+  
 
 

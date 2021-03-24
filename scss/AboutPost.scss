@@ -19,7 +19,7 @@
     background-color: #3B3B3B;
     }
 .LinePost{
-    width: 150;
+    width: 13%;
     height: 2PX;
     float: right;
     //margin-right: 87%;
@@ -27,28 +27,47 @@
     margin-top: -2px;
 }
 .LinePost2{
-    width: 320;
+    width: 26%;
     height: 2PX;
-    float: right;
-    margin-right: 48%;
+    //float: right;
+    //margin-right: 48%;
+    margin-left: -74.2%;
     margin-top: -2px;
 }
 .EcritureTitrePost{
+    display: flex;
+    flex-direction: row;
     font-size: 16px;
     font-weight: bold;
     //margin-left: 42%;
     color: #535353;
+    height: 6%;
+}
+.ImgExp{
+    width: 73%;
+    height: 239%;
+    margin-left: 10%;
+    margin-top: 7%;
+}
+.imgPost{
+    width: 12%;
 }
 .Point{
     width: 7px;
     height: 7px;
     float: left;
-    margin-left: 5%;
+   // margin-left: 5%;
     margin-top: 5PX;
 }
+.spaceLeft{
+    margin-left: 12%;
+}
+/////////////////////////////////////////- FLEX - ///////////////////////////////////////////////
 .EcriturePost{
     display: flex;
     flex-direction: column;
+    margin-top: 5%;
+    margin-left: 2%;
 }
 .FlexPost{
     display: flex;
@@ -67,8 +86,94 @@
     width: 100%;
     margin-right: 7%;
 }
-.experiance1,.experiance2,.experiance3,.experiance4{
+.poitionPost{
     display: flex;
     flex-direction: column;
+    width: 97%;
+    height: 200px;
+    margin-left: 0%;
+    margin-top: 6%;
+    padding-left: 2%;
+    margin-right: 15%;
+    box-shadow: 0px 2px 4px #e0e0e0;
 }
 
+///////////////////////- Responsive Design -/////////////////////
+
+@media screen  and (min-width: 625px ) and (max-width: 768px ) {
+    .btnProfile1,.btneSkills1,.btnProjects1,.btnPosts1{
+        width: 23%;
+        font-size: 2vmin;
+        padding: 2%;
+    }
+    .LinePost2{
+        width: 46%;
+        margin-left: -64.3%;
+    }
+    .LinePost{
+        width: 23%;
+    }
+    .EcriturePost,.EcritureTitrePost {
+        font-size: 12px;
+    }
+    .poitionPost{
+        height: 182px;
+    }
+    .spaceLeft{
+        margin-left: 5%;
+     }
+  }
+
+  @media screen  and (min-width: 425px ) and (max-width: 469px ) {
+    .btnProfile1,.btneSkills1,.btnProjects1,.btnPosts1{
+        width: 23%;
+        font-size: 2vmin;
+        padding: 2%;
+    }
+    .LinePost2{
+        width: 46%;
+        margin-left: -64.3%;
+    }
+    .LinePost{
+        width: 23%;
+    }
+    .EcriturePost,.EcritureTitrePost {
+        font-size: 9px;
+    }
+    .poitionPost{
+        height: 146px;
+    }
+    .spaceLeft{
+        margin-left: 5%;
+     }
+  }
+  @media screen  and (max-width: 424px ) {
+    .btnProfile1,.btneSkills1,.btnProjects1,.btnPosts1{
+        width: 23%;
+        font-size: 2vmin;
+        padding: 2%;
+    }
+    .LinePost2{
+        width: 46%;
+        margin-left: -64.3%;
+    }
+    .LinePost{
+        width: 23%;
+    }
+    .EcriturePost,.EcritureTitrePost {
+        font-size: 7px;
+    }
+    .poitionPost{
+        height: 121px;
+    }
+    .spaceLeft{
+        margin-left: 5%;
+     }
+     .Point {
+        width: 4px;
+        height: 4px;
+        margin-top: 3PX;
+    }
+  }
+  
+  

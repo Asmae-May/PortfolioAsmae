@@ -3,6 +3,7 @@
         <title>Skills Asmae</title>
         <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="scss/style.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
             <link rel="stylesheet" href="fontawesome/css/style.css">
@@ -11,179 +12,178 @@
 
     <body>
 
-        <main class="demo-1">
+      <main class="demo-1">
 			
-            <div class="contentIndex">
-              <canvas class="scene scene--full" id="scene"></canvas>
-              <script type="x-shader/x-vertex" id="wrapVertexShader">
-                attribute float size;
-                attribute vec3 color;
-                varying vec3 vColor;
-                void main() {
-                  vColor = color;
-                  vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-                  gl_PointSize = size * ( 350.0 / - mvPosition.z );
-                  gl_Position = projectionMatrix * mvPosition;
-                }
-              </script>
-              <script type="x-shader/x-fragment" id="wrapFragmentShader">
-                varying vec3 vColor;
-                uniform sampler2D texture;
-                void main(){
-                  vec4 textureColor = texture2D( texture, gl_PointCoord );
-                  if ( textureColor.a < 0.3 ) discard;
-                  vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
-                  gl_FragColor = color;
-                }
-              </script>
-              <div class="content__innerBackground">
+          <div class="contentIndex">
+                <canvas class="scene scene--full" id="scene"></canvas>
+                <script type="x-shader/x-vertex" id="wrapVertexShader">
+                  attribute float size;
+                  attribute vec3 color;
+                  varying vec3 vColor;
+                  void main() {
+                    vColor = color;
+                    vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+                    gl_PointSize = size * ( 350.0 / - mvPosition.z );
+                    gl_Position = projectionMatrix * mvPosition;
+                  }
+                </script>
+                <script type="x-shader/x-fragment" id="wrapFragmentShader">
+                  varying vec3 vColor;
+                  uniform sampler2D texture;
+                  void main(){
+                    vec4 textureColor = texture2D( texture, gl_PointCoord );
+                    if ( textureColor.a < 0.3 ) discard;
+                    vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
+                    gl_FragColor = color;
+                  }
+                </script>
+                <div class="content__innerBackground">
                     <!---------------------------------------- Header -------------------------------------------->
                     <div class="header"></div>
                     <!---------------------------------------- Main -------------------------------------------->
-                    <div >
-                        <div class="PositionButton">
-                            <div>
-                                <button class="btnProfile2" onclick="NavigerProfile()">
-                                    <img src="img/user 1.svg" class="photoSvg">Profile
-                                </button>
-                                <button class="btnPosts2" onclick="NavigerPost()">
-                                <img src="img/experience.svg" class="photoSvg">Expérience
-                                </button>
-                                <button class="btneSkills2" onclick="NavigerSkills()">
-                                    <img src="img/competence.svg" class="photoSvg">Compétences
-                                </button>
-                                <button class="btnProjects2" onclick="NavigerWork()">
-                                    <img src="img/analytics.svg" class="photoSvg">Projets
-                                </button>
-                            </div>
-                            <div>
-                               <img src="img/Line.svg" class="LinePostSkills">
-                               <img src="img/Line.svg" class="LinePostSkills2">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="area1" >Mes compétences</div>      
-                           
-                            <div class="FlexButton">  
-                                    <div class="flexGrid buttons">
-                                        <button id="btnBE" onclick="$('.BE2').toggle();"  class="btnB blob-btn">
-                                            <div class="BACKgROUND">
-                                                <img src="img/backend.svg" class="photoButton">
-                                            </div>
-                                            Back End
-                                            <img src="img/MoreDetails.svg" class="details">
-                                            <span class="blob-btn__inner">
-                                                <span class="blob-btn__blobs">
-                                                  <span class="blob-btn__blob"></span>
-                                                  <span class="blob-btn__blob"></span>
-                                                  <span class="blob-btn__blob"></span>
-                                                  <span class="blob-btn__blob"></span>
-                                                </span>
-                                              </span>
-                                        </button>
-                                        <div class="BE2"></div> 
-                                        <br/>
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                                        <defs>
-                                            <filter id="goo">
-                                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
-                                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                                            </filter>
-                                        </defs>
-                                        </svg>
-                                        
-                                    </div> 
-            
-                                    <div class="flexGrid buttons">
-                                        <button id="btnFE" onclick="$('.FrontEnd2').toggle();" class="btnF blob-btn">
-                                            <div class="BACKgROUND">
-                                                <img src="img/frontEnd.svg" class="photoButton">
-                                            </div>
-                                            Front end
-                                            <img src="img/MoreDetails.svg" class="details">
-                                            <span class="blob-btn__inner">
-                                                <span class="blob-btn__blobs">
-                                                  <span class="blob-btn__blob"></span>
-                                                  <span class="blob-btn__blob"></span>
-                                                  <span class="blob-btn__blob"></span>
-                                                  <span class="blob-btn__blob"></span>
-                                                </span>
-                                              </span>
-                                        </button>
-                                        <div class="FrontEnd2"></div>  
-                                        <br/>
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                                        <defs>
-                                            <filter id="goo">
-                                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
-                                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                                            </filter>
-                                        </defs>
-                                        </svg>                  
-                                    </div>
-             
-                                    <div  class="flexGrid buttons">
-                                        <button  id="btnDesg" onclick="$('.Desg').toggle();" class="btnD blob-btn">
-                                            <div class="BACKgROUND">
-                                                <img src="img/design.svg" class="photoButton">
-                                            </div>
-                                            Designe
-                                            <img src="img/MoreDetails.svg" class="details">
-                                            <span class="blob-btn__inner">
-                                                <span class="blob-btn__blobs">
-                                                  <span class="blob-btn__blob"></span>
-                                                  <span class="blob-btn__blob"></span>
-                                                  <span class="blob-btn__blob"></span>
-                                                  <span class="blob-btn__blob"></span>
-                                                </span>
-                                              </span>
-                                        </button>
-                                        <div class="Desg"></div>
-                                        <br/>
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                                        <defs>
-                                            <filter id="goo">
-                                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
-                                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                                            </filter>
-                                        </defs>
-                                        </svg>
-                                    </div>
-            
-                                    <div  class="flexGrid buttons">
-                                        <button id="btnDataB" onclick="$('.BD').toggle();" class="btnBD blob-btn">
-                                           <div class="BACKgROUND">
-                                              <img src="img/DataBase.svg" class="photoButton">
-                                           </div> 
-                                           Base de données 
-                                            <img src="img/MoreDetails.svg" class="details">
-                                        
-                                            <span class="blob-btn__inner">
-                                                <span class="blob-btn__blobs">
-                                                  <span class="blob-btn__blob"></span>
-                                                  <span class="blob-btn__blob"></span>
-                                                  <span class="blob-btn__blob"></span>
-                                                  <span class="blob-btn__blob"></span>
-                                                </span>
-                                              </span>
-                                        </button>
-                                        <div class="BD"></div>
-                                        <br/>
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                                        <defs>
-                                            <filter id="goo">
-                                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
-                                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                                            </filter>
-                                        </defs>
-                                        </svg>
-                                    </div>
-                            </div>
-                        </div>
+                    <div class="PositionButton">
+                      <div class="BtnMenu1">
+                          <button class="btnProfile2" onclick="NavigerProfile()">
+                              <img src="img/user 1.svg" class="photoSvg">Profile
+                          </button>
+                          <button class="btnPosts2" onclick="NavigerPost()">
+                          <img src="img/experience.svg" class="photoSvg">Expérience
+                          </button>
+                          <button class="btneSkills2" onclick="NavigerSkills()">
+                              <img src="img/competence.svg" class="photoSvg">Compétences
+                          </button>
+                          <button class="btnProjects2" onclick="NavigerWork()">
+                              <img src="img/analytics.svg" class="photoSvg">Projets
+                          </button>
+                      </div>
+                      <div class="BtnMenuLine">
+                         <img src="img/Line.svg" class="LinePostSkills">
+                         <img src="img/Line.svg" class="LinePostSkills2">
+                      </div>
+                    </div>
+
+                    <div class="area1" >Mes compétences</div> 
+
+                    <div class="FlexButton">  
+                      
+                          <div class="flexGrid buttons">
+                              <button id="btnBE" onclick="$('.BE2').toggle();"  class="btnB blob-btn">
+                                  <div class="BACKgROUND">
+                                      <img src="img/backend.svg" class="photoButton">
+                                  </div>
+                                  Back End
+                                  <img src="img/MoreDetails.svg" class="details">
+                                  <span class="blob-btn__inner">
+                                      <span class="blob-btn__blobs">
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                      </span>
+                                    </span>
+                              </button>
+                              <div class="BE2"></div> 
+                              <br/>
+                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                              <defs>
+                                  <filter id="goo">
+                                  <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                  <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                  </filter>
+                              </defs>
+                              </svg>
+                              
+                          </div> 
+
+                          <div class="flexGrid buttons">
+                              <button id="btnFE" onclick="$('.FrontEnd2').toggle();" class="btnF blob-btn">
+                                  <div class="BACKgROUND">
+                                      <img src="img/frontEnd.svg" class="photoButton">
+                                  </div>
+                                  Front end
+                                  <img src="img/MoreDetails.svg" class="details">
+                                  <span class="blob-btn__inner">
+                                      <span class="blob-btn__blobs">
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                      </span>
+                                    </span>
+                              </button>
+                              <div class="FrontEnd2"></div>  
+                              <br/>
+                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                              <defs>
+                                  <filter id="goo">
+                                  <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                  <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                  </filter>
+                              </defs>
+                              </svg>                  
+                          </div>
+                     
+                          <div  class="flexGrid buttons">
+                              <button  id="btnDesg" onclick="$('.Desg').toggle();" class="btnD blob-btn2">
+                                  <div class="BACKgROUND">
+                                      <img src="img/design.svg" class="photoButton">
+                                  </div>
+                                  Designe
+                                  <img src="img/MoreDetails.svg" class="details">
+                                  <span class="blob-btn__inner">
+                                      <span class="blob-btn__blobs">
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                      </span>
+                                    </span>
+                              </button>
+                              <div class="Desg"></div>
+                              <br/>
+                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                              <defs>
+                                  <filter id="goo">
+                                  <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                  <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                  </filter>
+                              </defs>
+                              </svg>
+                          </div>
+
+                          <div  class="flexGrid buttons">
+                              <button id="btnDataB" onclick="$('.BD').toggle();" class="btnBD blob-btn2">
+                                  <div class="BACKgROUND">
+                                    <img src="img/DataBase.svg" class="photoButton">
+                                  </div> 
+                                  Base de données 
+                                  <img src="img/MoreDetails.svg" class="details">
+                              
+                                  <span class="blob-btn__inner">
+                                      <span class="blob-btn__blobs">
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                      </span>
+                                    </span>
+                              </button>
+                              <div class="BD"></div>
+                              <br/>
+                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                              <defs>
+                                  <filter id="goo">
+                                  <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                  <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                  </filter>
+                              </defs>
+                              </svg>
+                          </div>
+                     
                     </div>
                     <!---------------------------------------- Popin -------------------------------------------->
                     <div class="conPopin">
@@ -223,9 +223,10 @@
                         
                       </div>
                     </div>                    
-               </div>
-            </div>
-        </main>
+                </div>
+          </div>
+
+      </main>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>

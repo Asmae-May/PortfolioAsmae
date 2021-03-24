@@ -19,10 +19,10 @@
     background-color:#3B3B3B;
     }
 .LineWork{
-    width: 450;
+    width: 39.1%;
     height: 2PX;
-    float: right;
-    margin-right: 61%;
+    //float: right;
+    //margin-right: 61%;
     margin-top: -2PX;
     }
 .space{
@@ -39,24 +39,31 @@
         opacity: 1;
     }
 }
-.styleImage{
+.txt-style2{
+    font-size: 12px;
+}
+.styleImage,.styleImagePLALOG{
     position: relative;
-    width: 350px;
-    height: 150px;
+    //width: 350px;
+    //height: 150px;
+    width: 129%;
+    height: 78%;
     margin-top: 15px;
 }
-.styleImage1{
+.styleImage1,.styleImage1PLALOG{
     position: absolute;
     top: -14px;
-    right: -3px;
+    //right: -3px;
+    right: -4%;
     width: 100%;
     height: 100%;
     box-shadow: 0px 0px 5px #fff;
 }
-.styleImage2{
+.styleImage2,.styleImage2PLALOG{
     position: absolute;
     top: 25px;
-    right: -70px;
+    //right: -70px;
+    right: -18%;
     width: 100%;
     height: 100%;
     //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -88,6 +95,7 @@ img{
 .txt-style2{
     @include styleText();
     //padding-top: 2%; 
+    font-size: 2vmin;
     opacity: 0;
     @include animationText();
     animation-name: animation-workTitle;
@@ -127,8 +135,10 @@ animation-iteration-count: infinite;
 }
 .imgLogoSPM{
     position: absolute;
-    width: 33px;
-    height: 32px;
+   // width: 33px;
+    //height: 32px;
+    width: 55%;
+    height: 83%;
     margin-left: 22%;
     margin-top: 3%;
 }
@@ -170,6 +180,10 @@ from {
    // border: 0.5px solid $primary-color;
     color: $primary-color;
     border-radius: 12PX;
+    width: 142%;
+    margin-top: 10%;
+    padding-top: 8%;
+    padding-bottom: 8%;
     //border: 0;
     //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 4px 4px #E0E0E0;
@@ -181,17 +195,45 @@ from {
 }
 .styleFlech{
     width: 1px;
-    height: 166px;
+    height: 86%;
     transform: rotate(-180deg);
    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
    box-shadow: 0px 4px 4px #E0E0E0;
 
+}
+.txt-style2 {
+    font-size: 14px;
+}
+.btnSPM{
+    background-color:#3B3B3B;
+    border: 0ch;
+    color: $primary-color;
+    border-radius: 12PX;
+    margin-left: 132%;
+    width: 331%;
+    margin-top: 22%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    box-shadow: 0px 4px 4px #E0E0E0;
+}
+.btnPopupWorkPLALOG{
+    background-color:#3B3B3B;
+    border: 0ch;
+    color: $primary-color;
+    border-radius: 12PX;
+    margin-left: 132%;
+    width: 331%;
+    margin-top: 22%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    box-shadow: 0px 4px 4px #E0E0E0;
 }
 //////////////////////////////- Flex -////////////////////////////
 .tableStyle{
     display: flex;
     flex-direction: row;
     margin-left: $marginLeft;
+    //margin-right: 7%;
     opacity: 0;
     @include animationText();
     animation-name: animation-image;
@@ -203,11 +245,37 @@ from {
     padding-right: 1%;
     padding-bottom: 2%;
     width: 82%;
+    z-index: 5;
 }
-.workLeft{
+.tableStylePlalog{
+    display: flex;
+    flex-direction: row;
+    margin-left: $marginLeft;
+    opacity: 0;
+    @include animationText();
+    animation-name: animation-image;
+    animation-delay: 1200ms;
+    margin-top: 2%;
+    box-shadow: 0px 4px 4px #E0E0E0;
+    padding-left: 2%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    width: 82%;
+    z-index: 5;
+}
+.FlexBtn{
+    display: flex;
+    flex-direction: row;
+    //margin-top: -2%;
+}
+.workLeft,.workLeftPLALOG{
 display: flex;
 flex-direction: row;
 width: 55%;
+}
+.workRight,.workRightPLALOG{
+    width: 27%;
+    margin-left: 2%;
 }
 .FlexSPM{
 display: flex;
@@ -216,8 +284,289 @@ flex-direction: row;
 .FlexTXT{
     width: 38%;
 }
+.FlexPopin{
+    display: flex;
+    flex-direction: column;
+}
 
+///////////////////////- Responsive Design -/////////////////////
 
+@media screen  and (min-width: 625px ) and (max-width: 768px ) {
+    .btnProfile3,.btnPosts3,.btneSkills3,.btnProjects3{
+        width: 23%;
+        font-size: 2vmin;
+        padding: 2%;
+    }
+    .LineWork {
+        width: 69%;
+    }
+    .txt-style1 {
+        font-size: 23px;
+    }
+    .txt-style2,.txt-SPM2 {
+        font-size: 14px;
+    }
+    .tableStyle {
+        margin-top: -43%;
+    }
+    .workRight, .workRightPLALOG{
+        margin-left: 6%;
+    }
+    .styleImage, .styleImagePLALOG{
+        width: 118%;
+        height: 71%;
+        margin-top: 16%;
+    }
+    .FlexTXT {
+        width: 69%;
+    }
+    .btnVisitsite {
+        margin-top: 8%;
+        width: 132%;
+    }
+    .btnSPM,.btnPopupWorkPLALOG {
+        width: 311%;
+    }
+    .FlexBtn {
+        margin-top: -7%;
+    }
+}
 
+@media screen  and (min-width: 425px ) and (max-width: 469px ) {
+    .btnProfile3,.btnPosts3,.btneSkills3,.btnProjects3{
+        width: 23%;
+        font-size: 2vmin;
+        padding: 2%;
+    }
+    .LineWork {
+        width: 69%;
+    }
+    .txt-style1 {
+        font-size: 12px;
+        margin-left: 8%;
+    }
+  
+    .tableStyle {
+        margin-top: -89%;
+        width: 86%;
+        margin-left: 7%;
+    }
+    .tableStylePlalog{
+        margin-left: 7%;
+        width: 86%;
+        margin-top: -4%; 
+    }
+    .imgLogoSPM {
+        width: 72%;
+        height: 87%;
+        margin-left: 11%;
+    }
+    .BackGroundLogoSPM {
+        width: 27PX;
+        height: 30PX;
+    }
+    .FlexTXT {
+        width: 80%;
+    }
+    .txt-SPM {
+        font-size: 11px;
+    }
+    .area3 {
+        font-size: 9px;
+        margin-left: 19%;
+        margin-top: 8%;
+    }
+    .DateSPM {
+        width: 34px;
+        margin-left: 2%;
+    }
+    .txt-SPM2 {
+        font-size: 10px;
+        margin-top: -11%;
+        margin-left: 4%;
+    }
+    .styleImage, .styleImagePLALOG {
+        width: 120%;
+        height: 60%;
+        margin-left: 7%;
+        margin-top: 22px;
+    }
+    .styleImage2, .styleImage2PLALOG {
+        top: 16px;
+    }
+    .btnSPM,.btnVisitsite,.btnPopupWorkPLALOG {
+        font-size: 9px;
+        border-radius: 8px;
+    }
+    .FlexBtn {
+        margin-top: -11%;
+    }
+    .txt-style2 {
+        font-size: 9px;
+        margin-left: 8%;
+    }
+    
+}
 
+@media screen  and (min-width: 375px ) and (max-width: 424px ) {
+    .btnProfile3,.btnPosts3,.btneSkills3,.btnProjects3{
+        width: 24%;
+        font-size: 2vmin;
+        padding: 2%;
+    }
+    .LineWork {
+        width: 72%;
+    }
+    .PositionButton {
+        margin-left: 4%;
+    }
+    .txt-style1 {
+        font-size: 13px;
+        margin-left: 4%;
+    }
+    .txt-style2 {
+        font-size: 10px;
+        margin-left: 4%;
+    }
+    .tableStyle {
+        margin-top: -102%;
+        width: 92%;
+        margin-left: 4%;
+    }
+    .tableStylePlalog {
+        width: 92%;
+        margin-left: 4%;
+        margin-top: -4%;
+    }
+    .styleImage, .styleImagePLALOG {
+        width: 117%;
+        height: 65%;
+       // margin-left: 34%;
+    }
+    .styleImage2, .styleImage2PLALOG {
+        top: 12px;
+    }
+    .BackGroundLogoSPM {
+        width: 29PX;
+        height: 21PX;
+    }
+    .FlexTXT {
+        width: 80%;
+    }
+    .txt-SPM {
+        font-size: 10px;
+    }
+    .area3 {
+        font-size: 8px;
+        margin-left: 16%;
+        margin-top: 6%;
+    }
+    .DateSPM {
+        width: 29px;
+        height: 16px;
+        margin-left: -7%;
+    }
+    .workLeft, .workLeftPLALOG {
+        width: 60%;
+    }
+    .txt-SPM2 {
+        font-size: 8PX;
+        margin-left: 5%;
+        margin-top: -12%;
+    }
+    .btnVisitsite{
+        font-size: 7px;
+        border-radius: 5PX;
+        margin-left: 12%;
+    }
+    .btnSPM,.btnPopupWorkPLALOG{
+        font-size: 7px;
+        border-radius: 5PX;
+        margin-left: 162%;
+    }
+    .FlexBtn {
+        margin-top: -13%;
+    }
+}
+
+@media screen  and (min-width: 320px ) and (max-width: 374px ) {
+    .btnProfile3,.btnPosts3,.btneSkills3,.btnProjects3{
+        width: 24%;
+        font-size: 2vmin;
+        padding: 2%;
+    }
+    .LineWork {
+        width: 72%;
+    }
+    .PositionButton {
+        margin-left: 4%;
+    }
+    .txt-style1 {
+        font-size: 13px;
+        margin-left: 4%;
+    }
+    .txt-style2 {
+        font-size: 10px;
+        margin-left: 4%;
+    }
+    .tableStyle {
+        margin-top: -116%;
+        width: 92%;
+        margin-left: 4%;
+    }
+    .tableStylePlalog {
+        width: 92%;
+        margin-left: 4%;
+        margin-top: -4%;
+    }
+    .styleImage, .styleImagePLALOG {
+        width: 117%;
+        height: 65%;
+       // margin-left: 34%;
+    }
+    .styleImage2, .styleImage2PLALOG {
+        top: 12px;
+    }
+    .BackGroundLogoSPM {
+        width: 29PX;
+        height: 21PX;
+    }
+    .FlexTXT {
+        width: 80%;
+    }
+    .txt-SPM {
+        font-size: 10px;
+    }
+    .area3 {
+        font-size: 8px;
+        margin-left: 16%;
+        margin-top: 6%;
+    }
+    .DateSPM {
+        width: 29px;
+        height: 16px;
+        margin-left: -7%;
+    }
+    .workLeft, .workLeftPLALOG {
+        width: 60%;
+    }
+    .txt-SPM2 {
+        font-size: 8PX;
+        margin-left: 5%;
+        margin-top: -12%;
+    }
+    .btnVisitsite{
+        font-size: 7px;
+        border-radius: 5PX;
+        margin-left: 12%;
+    }
+    .btnSPM,.btnPopupWorkPLALOG{
+        font-size: 7px;
+        border-radius: 5PX;
+        margin-left: 162%;
+    }
+    .FlexBtn {
+        margin-top: -13%;
+    }
+}
 

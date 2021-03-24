@@ -1,14 +1,16 @@
 ////////////////////////SLICK/////////////////////////
 .SlickDetails{
-    padding-left: 2px;
+    padding-left: 0.2%;
  }
  .slider{
-     height: 28%;
+     //height: 28%;
+     height: 16%;
      margin-top: 2%;
  }
  .slider .SlickDetails{
-     margin: 20px;
-     position: relative;
+    // margin: 20px;
+    margin: 0.5%;
+    // position: relative;
  }
  .slider .slick-center .imgSlik{
    transform: scale(1.2);
@@ -19,16 +21,7 @@
      transition: all linear .4s;
  } 
 //////////////////////////////////////////POPIN///////////////////////////////////
-.btnSPM{
-    background-color:#3B3B3B;
-    border: 0ch;
-    color: $primary-color;
-    border-radius: 12PX;
-    //border: 0.5px solid $primary-color;
-    //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 6%;
-    box-shadow: 0px 4px 4px #E0E0E0;
-}
+
 .overlayWork {
     position: fixed;
     left: 0px;
@@ -60,6 +53,11 @@
     margin-left: 98%;
     margin-top :-3%;
     color: #1a1a1a;
+}
+.ConPopinWork{
+    //position: fixed;
+    z-index: 5;
+    //margin-left: 10%;
 }
 /////////////////////////////////////////////////////////////
 .TxtSPM{
@@ -109,12 +107,117 @@
     box-shadow: 0px 4px 4px #484848;
 }
 .ObjecSPM-Detail,.technoSPM-Detail{
+    display: flex;
+    flex-direction: column;
+    //height: 117%;
+    //width: 50%;
     margin-top: -1%;
     border-radius: 0 0 3PX 3px;
+    display: flex;
+    flex-direction: column;
 }
 ////////////////////////Flex/////////////////
-.FlexBtn{
+
+.FlexPopin{
     display: flex;
-    flex-direction: row;
-    margin-top: -2%;
+    flex-direction: column;
+}
+.FlexPopinWork{
+    display: flex;
+    flex-direction: column;
+}
+
+///////////////////////- Responsive Design -/////////////////////
+
+@media screen  and (min-width: 625px ) and (max-width: 768px ) {
+    .FlexPopinWork {
+        margin-top: 2%;
+    }
+    .popupWork {
+        margin-top: 4%;
+    }
+}
+@media screen  and (min-width: 425px ) and (max-width: 469px ) {
+    .txt-SPMDetail {
+        font-size: 20px;
+        margin-top: -3%;
+    }
+    .ObjecSPM, .ObjecSPM-Detail{
+        font-size: 12px;
+    }
+    .technoSPM, .technoSPM-Detail {
+        font-size: 12px;
+    }
+    .FlexPopinWork {
+        margin-top: 4%;
+    }
+    .btnCloseWork {
+        width: 40PX;
+        height: 40PX;
+        margin-left: 98%;
+        margin-top: -6%;
+    }
+    .popupWork{
+        margin-top: 8%;
+        height: 88%;
+    }
+    .slider{
+        height: 13%;
+    }
+    
+}
+@media screen  and (min-width: 375px ) and (max-width: 424px ) {
+    .txt-SPMDetail {
+        font-size: 17px;
+    }
+    .slider {
+        height: 12%;
+    }
+    .ObjecSPM, .ObjecSPM-Detail {
+        font-size: 12px;
+    }
+    .technoSPM, .technoSPM-Detail {
+        font-size: 12px;
+    }
+    .FlexPopinWork {
+        margin-top: 2%;
+    }
+    .btnCloseWork {
+        width: 38PX;
+        height: 38PX;
+        margin-top: -7%;
+    }
+    .popupWork{
+        margin-top: 7%;
+        height: 86%;
+    }
+}
+@media screen  and (min-width: 320px ) and (max-width: 374px ) {
+    .txt-SPMDetail {
+        font-size: 15px;
+    }
+    .slider {
+        height: 10%;
+    }
+    .ObjecSPM, .ObjecSPM-Detail {
+        font-size: 12px;
+        width: 55%;
+        //height: 97%;
+    }
+    .technoSPM, .technoSPM-Detail {
+        font-size: 12px;
+        //height: 97%;
+    }
+    .FlexPopinWork {
+        margin-top: 2%;
+    }
+    .btnCloseWork {
+        width: 35PX;
+        height: 35PX;
+        margin-top: -10%;
+    }
+    .popupWork{
+        margin-top: 7%;
+        height: 90%;
+    }
 }

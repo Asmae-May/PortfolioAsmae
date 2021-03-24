@@ -36,7 +36,7 @@ var dotTexture = loader.load("img/dotTexture.png");
 
 
 
-var dotsAmount = 500;
+var dotsAmount = 300;
 var dotsGeometry = new THREE.Geometry();
 var positions = new Float32Array(dotsAmount * 3);
 
@@ -66,7 +66,7 @@ for (var i = 0; i < dotsAmount; i++) {
     vector.toArray(positions, i * 3);
     colors[vector.color].toArray(colorsAttribute, i*3);
     //sizes[i] = 5;
-    sizes[i] = 1;
+    sizes[i] = 2;
 }
 
 function moveDot(vector, index) {
