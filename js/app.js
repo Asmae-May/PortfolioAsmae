@@ -1,5 +1,6 @@
 /******************** ouvrir une nouvelle page HTML apres le clic  ***************** */
 
+//const { active } = require("browser-sync");
 $('.header').load('../common/header.html');
 $('.BE2').load('BE.html');
 $('.FrontEnd2').load('FE.html');
@@ -31,6 +32,15 @@ if(btnDataB){
 
  
 
-/******************** Slick ***************** */
+/******************** background menu ****************
 
-    
+document.getElementById("aboutColor").addEventListener("click", displayDate);
+
+function displayDate() {
+ document.getElementById("aboutColor").classList.add("active");
+ document.getElementById("homeColor").classList.remove("active");
+}
+
+function ColorMenu(){
+    document.getElementById('aboutColor').style.backgroundColor = "#C82647";
+}*/
