@@ -1,8 +1,10 @@
-$primary-color:#424242;
+//$primary-color:#D0D0D0;
+$primary-color:#C7C7C7;
 //$backgroundColor:#F8ECE0;
 $backgroundColor:#FBF8EF;
 //$backgroundColor:#FAFAFA;
-$styleColor: #D77F4A;
+//$styleColor: #D77F4A;
+$styleColor: #ac1122;
 $font-stack:"robotoregular";
 $marginLeft:10%;
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -19,43 +21,6 @@ $marginLeft:10%;
     animation-direction: alternate;
     animation-fill-mode: forwards;  
 }
-body{
-    overflow: auto;
-    background-color: $backgroundColor;
-    font-family: $font-stack;
-}
-.area {
-  font-size: 22PX;
-    color: #D77F4A;
-    letter-spacing: 0.5px;
-    font-weight: bold;
-    animation: blur .75s ease-out infinite;
-    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
-    margin-top: -10%;
-    text-align: center;
-}
-@keyframes blur {
-  from {
-    text-shadow:0px 0px 10px #fff,
-      0px 0px 10px #fff, 
-      0px 0px 25px #fff,
-      0px 0px 25px #fff,
-      0px 0px 25px #fff,
-      0px 0px 25px #fff,
-      0px 0px 25px #fff,
-      0px 0px 25px #fff,
-      0px 0px 50px #fff,
-      0px 0px 50px #fff,
-      0px 0px 50px #5da0df,
-      0px 0px 150px #5da0df,
-      0px 10px 100px #5da0df,
-      0px 10px 100px #5da0df,
-      0px 10px 100px #5da0df,
-      0px 10px 100px #5da0df,
-      0px -10px 100px #5da0df,
-      0px -10px 100px #5da0df;
-  }
-}
 p{
     margin-left: 4%;
 }
@@ -66,7 +31,6 @@ p{
         font-weight: bold;
         letter-spacing: .02em;
 }
-
 /*----------------------Annimation Home---------------------------- */
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
@@ -138,20 +102,21 @@ letter-spacing: -.05rem;
   flex-direction: row;
 }
 .Taille{
-  width: 35%;
+  width: 37%;
   float: left;
-  margin-left: 10%;
-  margin-top: 4%;
+  margin-left: 7%;
+  margin-top: 2%;
   border-radius: 8px;
 }
 .carousel-inner {
   border-radius: 27%;
 }
 .TXT{
-  width: 45%;
+  width: 59%;
   float: right;
-  margin-right: 10%;
-  margin-top: 10%;
+  margin-right: 7%;
+  margin-top: 3%;
+  margin-left: 9%;
 }
 .ImgHome{
   width: 100%;
@@ -159,12 +124,42 @@ letter-spacing: -.05rem;
 }
 button{
   //background-color:#F8ECE0;
-width: 148px;
-margin-top: 10px;
+  width: 148px;
+  margin-top: 10px;
   font-weight: bold;
-padding-bottom: 8px;
- padding-top: 8px;
-font-size: 18px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  font-size: 18px;
   border-radius: 8px;
   border: 0.5px solid #BDBDBD;
+}
+.content__innerBackground{
+	grid-area: 1 / 1 / 1 / 1;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.neons {
+  display: flex;
+  justify-content: center;
+  //align-items: center;
+  font-family: 'Codystar';
+  font-size: 22PX;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+   from {
+    color: #D0D0D0;
+  text-shadow: 0 0 4px;
+}
+
+to {
+   color: #737373;
+  text-shadow: 0 0 8px;
+}
 }

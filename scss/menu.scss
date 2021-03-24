@@ -1,18 +1,15 @@
-header{
-  overflow: auto;
-  background-color:$backgroundColor;
-}
 header img,nav{
 display: inline;
 }
 .logo {
   float: left;
-    margin-left: 10%;
-    height: 40px;
-    width: 183PX;
-    margin-top: 0.5;
-    margin-bottom: 2%;
-    animation-iteration-count: infinite;
+  //margin-left: 10%;
+  height: 40px;
+  width: 140PX;
+  margin-top: 0.5;
+  margin-bottom: 2%;
+  margin-left: 7%;
+  animation-iteration-count: infinite;
 }
 $icon-size    : 43px;
 $border-radius: 0.5;//15% = 0.15, 50% = 0.50 etc.
@@ -21,18 +18,20 @@ $background   : $backgroundColor;
 $background-b : #2d2c3e;
 
 // Icon Colors
-$green        : #F6E3CE;
+$green        : $styleColor;
 $red          : #C82647;
 $green-l      : #8CC63F;
-$orange       : #F6E3CE;
-$purple       : #F6E3CE;
+$orange       :$styleColor;
+$purple       :$styleColor;
 
 // Text
 //$gris      : #8F8F8F;
-$gris      : #5B5B5B;
+//$gris      : #5B5B5B;
+$gris      : #D0D0D0;
+
 
 .container{
-  background: $background;
+  //background: $background;
   z-index: -1;
 }
 
@@ -167,6 +166,6 @@ h1{
 }
 a{
 text-decoration: none;
-}
+}   
 
 

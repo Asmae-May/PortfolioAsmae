@@ -1,0 +1,120 @@
+////////////////////////SLICK/////////////////////////
+.SlickDetails{
+    padding-left: 2px;
+ }
+ .slider{
+     height: 28%;
+     margin-top: 2%;
+ }
+ .slider .SlickDetails{
+     margin: 20px;
+     position: relative;
+ }
+ .slider .slick-center .imgSlik{
+   transform: scale(1.2);
+   box-shadow: 0px 4px 4px $primary-color;
+ }
+ .imgSlik{
+     border-radius: 8px;
+     transition: all linear .4s;
+ } 
+//////////////////////////////////////////POPIN///////////////////////////////////
+.btnSPM{
+    background-color:#3B3B3B;
+    border: 0ch;
+    color: $primary-color;
+    border-radius: 12PX;
+    //border: 0.5px solid $primary-color;
+    //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 6%;
+    box-shadow: 0px 4px 4px #E0E0E0;
+}
+.overlayWork {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display:none;
+}
+.popupWork{
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-bottom: 2%;
+    width: 92%;
+    height: 92%;
+    background-color: black;
+    padding: 1em;
+    //box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px #fff;
+    border-radius: 5px;
+ }
+ .btnCloseWork {
+    font-size: 22pt;
+    //font-size: bo;
+    font-weight: bold;
+    width: 50PX;
+    height: 50PX;
+    margin-left: 98%;
+    margin-top :-3%;
+    color: #1a1a1a;
+}
+/////////////////////////////////////////////////////////////
+.TxtSPM{
+    padding-top: 2%;
+    font-size: 200;
+    font-weight: bold;
+}
+.txt-SPMDetail{
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 39px;
+    text-align: center;
+}
+.popupWork{
+    display: flex;
+    flex-direction: column;
+}
+.GridWorkDetailTitre{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+.GridWorkDetail{
+    display: flex;
+    flex-direction: row;
+}
+.ObjecSPM,.technoSPM{
+   // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 5px #fff;
+    border-radius:3Px 3PX 0 0;
+    width: 50%;
+    color: $primary-color;
+    font-weight: bold;
+    text-align: center;
+    background-color: #650000;
+}
+.ObjecSPM,.ObjecSPM-Detail{
+   width: 49%;
+   margin-left: 2%;
+   box-shadow: 0px 4px 4px #484848;
+}
+.technoSPM,.technoSPM-Detail{
+    width: 50%;
+    margin-left: 1%;
+    margin-right: 2%;
+    //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px #484848;
+}
+.ObjecSPM-Detail,.technoSPM-Detail{
+    margin-top: -1%;
+    border-radius: 0 0 3PX 3px;
+}
+////////////////////////Flex/////////////////
+.FlexBtn{
+    display: flex;
+    flex-direction: row;
+    margin-top: -2%;
+}

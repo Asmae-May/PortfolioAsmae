@@ -9,9 +9,6 @@
     display:none;
 }
 .popup{
-   /* margin-left: 65%;
-    margin-top: 12%;
-    border-radius: 5px;*/
     margin-left: 59%;
     margin-top: 5%;
     border-radius: 5px;
@@ -19,7 +16,7 @@
 .btnClose {
     float: right;
     font-size: 22pt;
-    font-size: bo;
+    //font-size: BLO;
     font-weight: bold;
     margin-right: 3%;
     cursor: pointer;
@@ -29,16 +26,22 @@
     position: absolute;
     width: 82px;
     height: 82PX;
-    float: left;
-    margin-left: 87%;
+   // float: left;
+    //margin-left: 87%;
    // margin-top: -6%;
-   margin-top: auto;
+}
+.conPopin{
+    position: fixed;
+    float: left;
+    margin-left: 91%;
+    margin-top: 40%;
 }
 .Rectongle{
     position: relative;
     width: 361px;;
     height: 80PX;
-    background: #F8ECE0;
+    //background: #F8ECE0;
+    background: #C7C7C7;
     border-radius: 12px 12PX 0 0;
     margin-left: 10%;
     margin-top: 10%;
@@ -56,13 +59,14 @@
     color: $primary-color;
     margin-left: 33%;
     margin-top: 1%;
+    color: black;
 }
 .photo{
     position: absolute;
     width: 89px;
     height: 89px;
    // background: url(../img/photoHome3.svg);
-    border: 4px solid #F8ECE0;
+    border: 4px solid #C7C7C7;
     box-sizing: border-box;
     border-radius: 100PX;
     margin-left: 4%;
@@ -72,16 +76,19 @@
     position: absolute;
     font-weight: bold;
     font-size: 19px;
+    color: black;
 }
 .formulaire{
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: $backgroundColor;
+    //background-color: $backgroundColor;
+    background: #C7C7C7;
     width: 361PX;
     height: 500px;
     margin-left: 10%;
-    border: 4px solid #F8ECE0;
+    //border: 4px solid #F8ECE0;
+    border: 4px solid white;
     height: 296px;
     border-radius: 0 0 8PX 8PX;
 }
@@ -89,7 +96,8 @@
     border-radius: 8px;
     width: 332px;
     height: 40px;
-    background-color: #F8ECE0;
+   // background-color: #F8ECE0;
+   background: white;
     border: 0.5px solid #BDBDBD;
     margin-left: 3%;
     margin-top: 3%;
@@ -118,7 +126,7 @@ padding-top: 2%;
     float: left;
     height: 39px;
     width: 20%;
-    background: #F8ECE0;
+    background: #C7C7C7;
     margin-top: -7.5px;
     border-radius: 8px 0PX 0PX 8PX;
   }
@@ -126,7 +134,7 @@ padding-top: 2%;
 .btnChat{
     width: 100px;
     height: 41px;
-    background: #FBF8EF;
+    background: white;
     margin-left: 69%;
     margin-top: 5%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

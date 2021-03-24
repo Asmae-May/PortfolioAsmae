@@ -75,6 +75,7 @@ function jsTask() {
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest('dist/js'));
   }
+
 //////////////////////////////////////// JQuery ////////////////////////////////////////
 
 function jqueryTask() {
@@ -122,7 +123,6 @@ function imageTask() {
 function watchTask(){
     watch(parallele(jsTask,htmlTask,htmlCommonTask,fontTask, jsonTask,imageTask,jqueryTask,sassTask,webFontTask,cssawesomeTask));
 }
-
 exports.jsTask=jsTask;
 exports.htmlCommonTask=htmlCommonTask;
 exports.htmlTask=htmlTask;
