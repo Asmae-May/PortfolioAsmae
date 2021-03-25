@@ -180,14 +180,14 @@ to {
 }
 }
 /////////////////////////// - Responsive Design - ///////////////////////////
-@media screen and (max-width: 624px) {
+@media screen  and (max-width: 280px) {
   .flexPosition {
     flex-direction: column;
   }
   .TXT{
-    width: 90%;
+    width: 100%;
     margin-top: 2%;
-    margin-left: 7%;
+    margin-left: 0%;
     flex: 1;
   }
   .Taille{
@@ -199,6 +199,39 @@ to {
   }
   .carousel-item {
     height: 21rem;
+    margin-top: 5%;
+  }  
+  .carousel-item > img {
+    height: 21rem;
+  }
+  .neons {
+    font-size: 16px;
+  }
+  p{
+   font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 281px ) and (max-width: 624px) {
+  .flexPosition {
+    flex-direction: column;
+  }
+  .TXT{
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 0%;
+    flex: 1;
+  }
+  .Taille{
+    width: 86%;
+    margin-left: 7%;
+    margin-top: 2%;
+    border-radius: 8px;
+    flex: 1;
+  }
+  .carousel-item {
+    height: 21rem;
+    margin-top: 5%;
   }  
   .carousel-item > img {
     height: 21rem;
@@ -209,12 +242,14 @@ to {
     flex-direction: row;
   }
   .TXT{
-    width: 47%;
-    margin-top: 0%;
+    width: 53%;
+    margin-top: 11%;
     margin-left: -1%;
+    margin-right: 3%;
   }
   .carousel-item {
     height: 21rem;
+    //margin-top: 5%;
   }  
   .carousel-item > img {
     height: 21rem;
@@ -222,6 +257,7 @@ to {
   .carousel-inner{
     width: 95%;
     margin-left: -3%;
+    margin-top: 5%;
   }
   .Taille {
     margin-left: 7%;
