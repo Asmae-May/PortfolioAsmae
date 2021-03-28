@@ -291,23 +291,37 @@ flex-direction: row;
 
 ///////////////////////- Responsive Design -/////////////////////
 
-@media screen  and (min-width: 625px ) and (max-width: 768px ) {
+@media screen  and (min-width: 540px ) and (max-width: 767px ) {
     .btnProfile3,.btnPosts3,.btneSkills3,.btnProjects3{
-        width: 23%;
-        font-size: 2vmin;
+        width: 24%;
+        font-size: 14px;
         padding: 2%;
     }
     .LineWork {
-        width: 69%;
+        width: 72%;
     }
     .txt-style1 {
         font-size: 23px;
+        margin-left: 6%;
     }
-    .txt-style2,.txt-SPM2 {
+    .txt-style2 {
         font-size: 14px;
+        margin-left: 6%;
     }
-    .tableStyle {
-        margin-top: -43%;
+    .txt-SPM2{
+        font-size: 14px;
+        margin-top: -8%;
+    }
+    .tableStyle,.tableStylePlalog{
+        margin-top: -69%;
+        margin-left: 4%;
+        width: 92%;
+    }
+    .tableStylePlalog{
+       /// margin-top: -69%;
+        margin-left: 4%;
+        width: 92%;
+        margin-top: -1%;
     }
     .workRight, .workRightPLALOG{
         margin-left: 6%;
@@ -322,39 +336,39 @@ flex-direction: row;
     }
     .btnVisitsite {
         margin-top: 8%;
-        width: 132%;
+        width: 112%;
     }
     .btnSPM,.btnPopupWorkPLALOG {
-        width: 311%;
+        width: 273%;
+        margin-left: 46%;
     }
     .FlexBtn {
         margin-top: -7%;
     }
 }
 
-@media screen  and (min-width: 425px ) and (max-width: 469px ) {
+@media screen  and (min-width: 375px ) and (max-width: 469px ) {
     .btnProfile3,.btnPosts3,.btneSkills3,.btnProjects3{
         width: 23%;
-        font-size: 2vmin;
+        font-size: 9px;
         padding: 2%;
     }
     .LineWork {
         width: 69%;
     }
     .txt-style1 {
-        font-size: 12px;
+        font-size: 16px;
         margin-left: 8%;
-    }
-  
+    }  
     .tableStyle {
-        margin-top: -89%;
+        margin-top: -91%;
         width: 86%;
         margin-left: 7%;
     }
     .tableStylePlalog{
         margin-left: 7%;
         width: 86%;
-        margin-top: -4%; 
+        //margin-top: -4%; 
     }
     .imgLogoSPM {
         width: 72%;
@@ -402,13 +416,13 @@ flex-direction: row;
         margin-top: -11%;
     }
     .txt-style2 {
-        font-size: 9px;
+        font-size: 12px;
         margin-left: 8%;
     }
     
 }
 
-@media screen  and (min-width: 375px ) and (max-width: 424px ) {
+@media screen  and (min-width: 320px ) and (max-width: 374px ) {
     .btnProfile3,.btnPosts3,.btneSkills3,.btnProjects3{
         width: 24%;
         font-size: 2vmin;
@@ -421,11 +435,11 @@ flex-direction: row;
         margin-left: 4%;
     }
     .txt-style1 {
-        font-size: 13px;
+        font-size: 16px;
         margin-left: 4%;
     }
     .txt-style2 {
-        font-size: 10px;
+        font-size: 12px;
         margin-left: 4%;
     }
     .tableStyle {
@@ -489,7 +503,7 @@ flex-direction: row;
     }
 }
 
-@media screen  and (min-width: 320px ) and (max-width: 374px ) {
+@media screen  and (max-width: 319px ) {
     .btnProfile3,.btnPosts3,.btneSkills3,.btnProjects3{
         width: 24%;
         font-size: 2vmin;

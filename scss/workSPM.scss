@@ -129,7 +129,7 @@
 
 ///////////////////////- Responsive Design -/////////////////////
 
-@media screen  and (min-width: 625px ) and (max-width: 768px ) {
+@media screen  and (min-width: 540px ) and (max-width: 767px ) {
     .FlexPopinWork {
         margin-top: 2%;
     }
@@ -137,7 +137,7 @@
         margin-top: 4%;
     }
 }
-@media screen  and (min-width: 425px ) and (max-width: 469px ) {
+@media screen  and (min-width: 375px ) and (max-width: 469px ) {
     .txt-SPMDetail {
         font-size: 20px;
         margin-top: -3%;
@@ -158,15 +158,18 @@
         margin-top: -6%;
     }
     .popupWork{
-        margin-top: 8%;
-        height: 88%;
+        margin-top: 33%;
+        height: 63%;
     }
     .slider{
         height: 13%;
     }
+    .overlayWork {
+        background-color: BLACK;
+    }
     
 }
-@media screen  and (min-width: 375px ) and (max-width: 424px ) {
+@media screen  and (min-width: 320px ) and (max-width: 374px ) {
     .txt-SPMDetail {
         font-size: 17px;
     }
@@ -188,11 +191,11 @@
         margin-top: -7%;
     }
     .popupWork{
-        margin-top: 7%;
-        height: 86%;
+        margin-top: 22%;
+        height: 81%;
     }
 }
-@media screen  and (min-width: 320px ) and (max-width: 374px ) {
+@media screen  and (max-width: 319px ) {
     .txt-SPMDetail {
         font-size: 15px;
     }
